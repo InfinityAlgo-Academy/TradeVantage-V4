@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المدونة التعليمية | InfinityAlgo Academy</title>
+
+    <!-- CSS & Fonts -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .article-container {
+            max-width: 900px;
+            margin: 60px auto;
+        }
+
+        .resource-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+            margin-top: 60px;
+        }
+
+        .resource-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-light);
+            border-radius: 24px;
+            overflow: hidden;
+            transition: var(--transition);
+        }
+
+        .resource-card:hover {
+            border-color: var(--border-accent);
+            transform: translateY(-8px);
+        }
+
+        .resource-img {
+            height: 200px;
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: var(--accent);
+            opacity: 0.8;
+            position: relative;
+        }
+
+        .resource-img::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at center, transparent, rgba(0, 0, 0, 0.4));
+        }
+
+        .resource-body {
+            padding: 32px;
+        }
+
+        .resource-meta {
+            font-size: 0.8rem;
+            color: var(--accent);
+            margin-bottom: 12px;
+            display: block;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .resource-title {
+            color: #fff;
+            font-size: 1.4rem;
+            margin-bottom: 16px;
+            line-height: 1.4;
+            font-weight: 800;
+        }
+
+        .resource-desc {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 24px;
+        }
+
+        @media (max-width: 968px) {
+            .resource-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .resource-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="mesh-gradient"></div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <nav class="navbar">
+            <a href="index.html" class="mono"
+                style="font-weight: 800; font-size: 1.2rem; color: #fff; text-decoration: none;">
+                INFINITY<span style="color: var(--accent);">ALGO</span>
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">الرئيسية</a></li>
+                <li><a href="products.html" class="nav-link">المؤشرات والبوتات</a></li>
+                <li><a href="resources.html" class="nav-link active">المدونة التعليمية</a></li>
+                <li><a href="about.html" class="nav-link">من نحن</a></li>
+                <li><a href="contact.html" class="nav-link">اتصل بنا</a></li>
+            </ul>
+
+            <a href="https://t.me/InfinityAlgo_Group_Topics" class="btn btn-primary">
+                مجتمعنا التعليمي
+            </a>
+        </nav>
+    </header>
+
+    <!-- Content -->
+    <section class="container" style="padding-top: 180px; padding-bottom: 120px;">
+        <div class="reveal" style="text-align: center;">
+            <span class="badge">مقالات تقنية احترافية</span>
+            <h1 class="text-gradient" style="margin-bottom: 24px;">خزينة المعرفة التداولية</h1>
+            <p style="color: var(--text-secondary); max-width: 650px; margin: 0 auto;">نخبة من المقالات المتعمقة حول
+                أقوى أدواتنا الرقمية وكيفية استخدامها لتحقيق أقصى استفادة في الأسواق.</p>
+        </div>
+
+        <div class="resource-grid">
+            <!-- Article 1: Mad Turtle AI -->
+            <div class="resource-card reveal">
+                <div class="resource-img"><i class="fas fa-robot"></i></div>
+                <div class="resource-body">
+                    <span class="resource-meta">دليل تقني • ذكاء اصطناعي</span>
+                    <h3 class="resource-title">لماذا يغير Mad Turtle AI مفاهيم التداول الغربي؟</h3>
+                    <p class="resource-desc">تحليل عميق لكيفية استخدام "سلحفاة الذكاء الاصطناعي" لتعلم الآلة العصبوني في
+                        تحليل الأنماط التاريخية والتنبؤ بالانفجارات السعرية القادمة بدقة 95%.</p>
+                    <a href="#" class="btn btn-outline btn-sm" style="width: auto;">اقرأ المقال كاملاً</a>
+                </div>
+            </div>
+
+            <!-- Article 2: Nexus EA -->
+            <div class="resource-card reveal" style="transition-delay: 0.1s;">
+                <div class="resource-img"><i class="fas fa-microchip"></i></div>
+                <div class="resource-body">
+                    <span class="resource-meta">أتمتة • سكالبينج</span>
+                    <h3 class="resource-title">Nexus EA: الهندسة المفقودة في إدارة المحافظ الآلية</h3>
+                    <p class="resource-desc">كيف تم تطوير Nexus EA ليكون أكثر من مجرد روبوت تداول، بل مدير مخاطر ذكي
+                        يمتلك قدرة على التكيف مع تقلبات سوق العملات العنيفة وتجنب الخسائر العشوائية.</p>
+                    <a href="#" class="btn btn-outline btn-sm" style="width: auto;">شاهد الشرح التقني</a>
+                </div>
+            </div>
+
+            <!-- Article 3: TradingView Bundle -->
+            <div class="resource-card reveal" style="transition-delay: 0.2s;">
+                <div class="resource-img"><i class="fas fa-layer-group"></i></div>
+                <div class="resource-body">
+                    <span class="resource-meta">أدوات • مراجعة شاملة</span>
+                    <h3 class="resource-title">مراجعة حزمة الـ 80 مؤشر: كيف تسيطر على مخططك؟</h3>
+                    <p class="resource-desc">هل تحتاج فعلاً لـ 80 مؤشر؟ نكشف في هذا المقال عن "الخمسة الكبار" داخل
+                        الحزمة والذين يشكلون معاً أقوى هيكل تحليلي لمنصة TradingView في الوقت الحالي.</p>
+                    <a href="#" class="btn btn-outline btn-sm" style="width: auto;">استعرض الحزمة</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-logo mono">INFINITY<span style="color: var(--accent);">ALGO</span></div>
+                    <p style="color: var(--text-secondary);">نبتكر حلولاً رقمية تجعل التداول الاحترافي متاحاً للجميع
+                        مجاناً.</p>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 20px;">الروابط</h4>
+                    <a href="index.html" class="footer-link">الرئيسية</a>
+                    <a href="about.html" class="footer-link">من نحن</a>
+                    <a href="https://t.me/King_arius_dz" class="footer-link">تيليجرام</a>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 20px;">القانونية</h4>
+                    <a href="privacy.html" class="footer-link">سياسة الخصوصية</a>
+                    <a href="disclaimer.html" class="footer-link">إخلاء المسؤولية</a>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 60px; color: var(--text-dim); font-size: 0.8rem;">
+                &copy; 2026 InfinityAlgo Academy. Gifted with passion.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>

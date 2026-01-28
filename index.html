@@ -4,1063 +4,319 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>مؤشر ACD لمنصة MetaTrader 5 | InfinityAlgo Academy</title>
-    <meta name="description"
-        content="مؤشر ACD الاحترافي لمنصة ميتاتريدر 5. حدد الاتجاهات ونقاط الدخول بدقة عالية باستخدام استراتيجية Mark Fisher.">
+    <title>InfinityAlgo Academy | تداول بذكاء</title>
+    <meta name="description" content="أكاديمية InfinityAlgo لتعليم التداول الخوارزمي والمؤشرات الذكية.">
 
-    <!-- CSS -->
+    <!-- CSS & Fonts -->
     <link rel="stylesheet" href="style.css">
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap"
-        rel="stylesheet">
-
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
 
+    <div class="mesh-gradient"></div>
+
     <!-- Header -->
     <header class="site-header">
         <nav class="navbar">
-            <a href="index.html" class="brand">ACD Indicator</a>
+            <a href="index.html" class="mono"
+                style="font-weight: 800; font-size: 1.2rem; color: #fff; text-decoration: none;">
+                INFINITY<span style="color: var(--accent);">ALGO</span>
+            </a>
 
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link active">الرئيسية</a></li>
+                <li><a href="products.html" class="nav-link">المؤشرات والبوتات</a></li>
+                <li><a href="resources.html" class="nav-link">المدونة التعليمية</a></li>
+                <li><a href="about.html" class="nav-link">من نحن</a></li>
+                <li><a href="contact.html" class="nav-link">اتصل بنا</a></li>
+            </ul>
 
-            <div class="nav-menu" id="navMenu">
-                <a href="#home" class="nav-link">الرئيسية</a>
-                <a href="#features" class="nav-link">المميزات</a>
-                <a href="#guide" class="nav-link">دليل الاستخدام</a>
-                <a href="#details" class="nav-link">التفاصيل</a>
-                <a href="about.html" class="nav-link">من نحن</a>
-                <a href="https://infinityalgoacademy.net/item/acd-indicator-for-metatrader-5-download-free/"
-                    class="btn-download" target="_blank">
-                    <i class="fas fa-download"></i> تحميل الآن
-                </a>
-            </div>
+            <a href="https://t.me/King_arius_dz" class="btn btn-primary">
+                انضم إلينا
+            </a>
         </nav>
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-bg"></div>
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1>اكتشف قوة التداول المؤسسي مع <br><span>ACD Indicator for MT5</span></h1>
-            <p>الحل الأمثل لتحديد الاتجاهات، نقاط الدخول، وإدارة الصفقات بدقة عالية بناءً على استراتيجية Mark Fisher
-                المثبتة.</p>
-            <div class="hero-btns">
-                <a href="https://infinityalgoacademy.net/item/acd-indicator-for-metatrader-5-download-free/"
-                    class="btn-primary" target="_blank">تحميل المؤشر مجاناً</a>
-                <a href="#features" class="btn-outline">اكتشف المزيد</a>
+    <section id="home" class="container" style="padding-top: 200px; padding-bottom: 100px; text-align: center;">
+        <div class="reveal">
+            <span class="badge">عصر التداول الذكي</span>
+            <h1 class="text-gradient">احتراف التداول <br>بالخوارزميات المبتكرة</h1>
+            <p style="color: var(--text-secondary); font-size: 1.25rem; max-width: 700px; margin: 24px auto 40px;">
+                نحن لا نقدم مجرد مؤشرات، بل نبني أنظمة تداول ذكية تعتمد على البيانات والذكاء الاصطناعي لرفع كفاءة
+                قراراتك المالية.
+            </p>
+            <div style="display: flex; gap: 16px; justify-content: center;">
+                <a href="#store" class="btn btn-primary">اكتشف منتجاتنا</a>
+                <a href="about.html" class="btn btn-outline">تعلم المزيد</a>
             </div>
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section id="features" class="section-padding section-bg-dark">
-        <div class="section-header">
-            <h2>لماذا تختار مؤشر ACD؟</h2>
-            <p>أدوات احترافية مصممة خصيصاً للمتداولين الذين يبحثون عن الدقة والانضباط.</p>
-        </div>
-        <div class="features-grid">
-            <div class="feature-card">
-                <i class="fas fa-chart-line feature-icon"></i>
-                <h3>Opening Range (OR)</h3>
-                <p>تحديد تلقائي لنطاق الافتتاح للجلسة الزمنية المحددة (لندن، نيويورك، إلخ) لإنشاء أساس قوي للتحليل
-                    اليومي.</p>
+    <!-- Bento Grid Features -->
+    <section id="features" class="container" style="padding: 100px 0;">
+        <div class="bento-grid">
+            <div class="bento-item span-2 row-2 reveal">
+                <i class="fas fa-brain" style="font-size: 2.5rem; color: var(--accent); margin-bottom: 24px;"></i>
+                <h3 style="font-size: 2rem; margin-bottom: 16px;">رؤية تعتمد على البيانات</h3>
+                <p style="color: var(--text-secondary); line-height: 1.7;">خوارزمياتنا تحلل ملايين البيانات في ثوانٍ
+                    لتعطيك الأفضلية التي تحتاجها في الأسواق العالمية.</p>
             </div>
 
-            <div class="feature-card">
-                <i class="fas fa-layer-group feature-icon"></i>
-                <h3>A-Lines & C-Lines</h3>
-                <p>حساب دقيق لمستويات A و C لتحديد نقاط الدخول وتأكيد الاتجاه، مما يساعدك على تجنب الإشارات الخاطئة.</p>
+            <div class="bento-item reveal">
+                <i class="fas fa-shield-halved"
+                    style="font-size: 1.8rem; color: var(--accent); margin-bottom: 20px;"></i>
+                <h4>إدارة مخاطر صارمة</h4>
+                <p style="color: var(--text-dim); font-size: 0.95rem; line-height: 1.6;">أنظمة مدمجة لحماية رأس مالك من
+                    التقلبات العنيفة.</p>
             </div>
 
-            <div class="feature-card">
-                <i class="fas fa-eye feature-icon"></i>
-                <h3>تحديد الاتجاه بوضوح</h3>
-                <p>مؤشرات بصرية واضحة للاتجاه الصاعد (Bullish) والهابط (Bearish) بناءً على مستويات الاختراق المؤكدة.</p>
+            <div class="bento-item reveal">
+                <i class="fas fa-bolt" style="font-size: 1.8rem; color: var(--accent); margin-bottom: 20px;"></i>
+                <h4>تنفيذ فائق السرعة</h4>
+                <p style="color: var(--text-dim); font-size: 0.95rem; line-height: 1.6;">سرعة في تحليل الإشارات وتنفيذها
+                    لضمان أفضل سعر دخول.</p>
             </div>
 
-            <div class="feature-card">
-                <i class="fas fa-bell feature-icon"></i>
-                <h3>تنبيهات فورية</h3>
-                <p>نظام تنبيهات متكامل (Popups, Email, Mobile) يعلمك فور حدوث اختراق لمستويات A أو C.</p>
-            </div>
-
-            <div class="feature-card">
-                <i class="fas fa-cogs feature-icon"></i>
-                <h3>تخصيص كامل</h3>
-                <p>تحكم كامل في إعدادات الوقت، الفترات الزمنية، والألوان لتناسب أسلوب تداولك الخاص.</p>
-            </div>
-
-            <div class="feature-card">
-                <i class="fas fa-laptop-code feature-icon"></i>
-                <h3>دعم MetaTrader 5</h3>
-                <p>مبني بلغة MQL5 الحديثة لضمان سرعة التنفيذ والتوافق مع أحدث إصدارات المنصة.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Guide / Article Section -->
-    <section id="guide" class="section-padding section-bg-card">
-        <div class="section-header">
-            <h2>دليل التثبيت والاحتراف</h2>
-            <p>كل ما تحتاج لمعرفته لبدء التداول باستخدام مؤشر ACD</p>
-        </div>
-        <div class="guide-content">
-            <!-- Step 1 -->
-            <div class="guide-step">
-                <h3><span class="step-number">1</span> كيفية التثبيت على MetaTrader 5</h3>
-                <p>تثبيت المؤشر عملية بسيطة جداً وتتم في خطوات معدودة:</p>
-                <ul>
-                    <li>حمل ملف المؤشر المضغوط من الرابط في الأعلى.</li>
-                    <li>افتح منصة MT5 ثم اذهب إلى قائمة <strong>File</strong> > <strong>Open Data Folder</strong>.</li>
-                    <li>انتقل إلى المجلد <strong>MQL5</strong> > <strong>Indicators</strong>.</li>
-                    <li>انسخ ملف المؤشر (بصيغة ex5) وألصقه داخل هذا المجلد.</li>
-                    <li>أعد تشغيل المنصة أو انقر بزر الماوس الأيمن على نافذة Navigator واختر Refresh.</li>
-                    <li>ستجد المؤشر ضمن القائمة، اسحبه وأسقطه على الشارت.</li>
-                </ul>
-            </div>
-
-            <!-- Step 2 -->
-            <div class="guide-step">
-                <h3><span class="step-number">2</span> نصائح ذهبية للتداول بالمؤشر</h3>
-                <p>للحصول على أفضل النتائج، اتبع هذه النصائح:</p>
-                <ul>
-                    <li><strong>أفضل إطار زمني:</strong> يفضل استخدام المؤشر على إطار 30 دقيقة أو الساعة لتحديد نطاق
-                        الافتتاح.</li>
-                    <li><strong>إدارة المخاطر:</strong> لا تدخل أي صفقة دون تحديد وقف الخسارة، ويفضل أن يكون خارج نطاق
-                        الـ Opening Range.</li>
-                    <li><strong>الدمج مع أدوات أخرى:</strong> النتائج تكون أقوى عند دمج إشارات ACD مع مستويات الدعم
-                        والمقاومة الكلاسيكية أو مؤشر الماكد.</li>
-                    <li><strong>توقيت السوق:</strong> المؤشر فعال جداً في الفترات التي توجد فيها سيولة عالية (بداية جلسة
-                        لندن ونيويورك).</li>
-                </ul>
-            </div>
-
-            <!-- Step 3 -->
-            <div class="guide-step">
-                <h3><span class="step-number">3</span> تجربة الأداء والفعالية</h3>
-                <p>عن تجربة شخصية ومكثفة لهذا المؤشر، أثبت ACD Indicator فعاليته العالية في فلترة "الضجيج" خاصة في أسواق
-                    الذهب والمؤشرات. ما يميزه حقاً هو قدرته على إبقائك خارج السوق في الأوقات العرضية المملة، وإعطائك
-                    إشارة دخول قوية بمجرد بدء الزخم الحقيقي.</p>
-                <p>إنه ليس مجرد مؤشر، بل هو نظام تداول متكامل يعلمك الصبر والانضباط في انتظار الفرصة المثالية.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Deep Dive Details -->
-    <section id="details" class="section-padding section-bg-dark">
-        <div class="details-container">
-            <div class="details-image">
-                <img src="assets/hero.webp" alt="ACD Indicator Analysis">
-            </div>
-            <div class="details-content">
-                <h2>استراتيجية مؤسسية بين يديك</h2>
-                <ul class="details-list">
-                    <li><i class="fas fa-check-circle"></i> تحديد مناطق الدعم والمقاومة الديناميكية تلقائياً.</li>
-                    <li><i class="fas fa-check-circle"></i> مثالي للمضاربة (Scalping) والتداول اليومي (Day Trading).
-                    </li>
-                    <li><i class="fas fa-check-circle"></i> يقلل من الضجيج السعري ويركز على التحركات الحقيقية.</li>
-                    <li><i class="fas fa-check-circle"></i> يعمل بكفاءة على جميع الأزواج الرئيسية والذهب والمؤشرات.</li>
-                    <li><i class="fas fa-check-circle"></i> كود نظيف وسريع الأداء لا يسبب بطء المنصة.</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section id="testimonials" class="section-padding section-bg-card">
-        <div class="section-header">
-            <h2>ماذا يقول عملاؤنا؟</h2>
-            <p>آراء حقيقية من متداولين يستخدمون حلولنا البرمجية.</p>
-        </div>
-        <div class="testimonials-grid">
-            <div class="testimonial-card">
-                <div class="user-info">
-                    <div class="user-avatar">A</div>
-                    <div class="user-details">
-                        <h4>Ahmed S.</h4>
-                        <div class="stars">★★★★★</div>
+            <div class="bento-item span-2 reveal">
+                <div style="display: flex; justify-content: space-around; align-items: center; width: 100%;">
+                    <div style="text-align: center;">
+                        <div class="mono" style="font-size: 3rem; color: #fff; font-weight: 800; line-height: 1;">+5000
+                        </div>
+                        <p style="color: var(--text-dim); font-size: 0.9rem; margin-top: 10px;">متداول نشط</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div class="mono" style="font-size: 3rem; color: #fff; font-weight: 800; line-height: 1;">+80
+                        </div>
+                        <p style="color: var(--text-dim); font-size: 0.9rem; margin-top: 10px;">مؤشر احترافي</p>
                     </div>
                 </div>
-                <p class="testimonial-text">"مؤشر رائع جداً، ساعدني كثيراً في تحديد الاتجاه اليومي بدقة. أنصح به بشدة."
-                </p>
-            </div>
-            <div class="testimonial-card">
-                <div class="user-info">
-                    <div class="user-avatar">M</div>
-                    <div class="user-details">
-                        <h4>Mohammad K.</h4>
-                        <div class="stars">★★★★★</div>
-                    </div>
-                </div>
-                <p class="testimonial-text">"الأدوات التي تقدمها InfinityAlgo دائماً مميزة. هذا المؤشر يختصر الكثير من
-                    وقت التحليل."</p>
-            </div>
-            <div class="testimonial-card">
-                <div class="user-info">
-                    <div class="user-avatar">S</div>
-                    <div class="user-details">
-                        <h4>Sami R.</h4>
-                        <div class="stars">★★★★☆</div>
-                    </div>
-                </div>
-                <p class="testimonial-text">"بسيط وفعال. التنبيهات تعمل بشكل ممتاز وتصلني على الهاتف مباشرة."</p>
             </div>
         </div>
     </section>
 
-    <!-- FAQ -->
-    <section id="faq" class="section-padding section-bg-dark">
-        <div class="section-header">
-            <h2>الأسئلة الشائعة</h2>
-            <p>إجابات شاملة لكل ما قد يخطر ببالك حول المؤشر واستخدامه.</p>
+    <!-- Store Section (Featured Products - ALL FREE) -->
+    <section id="store" class="container" style="padding: 100px 0;">
+        <div class="text-center reveal" style="margin-bottom: 60px;">
+            <span class="badge">هديتنا لكم</span>
+            <h2 style="font-size: 2.5rem;">أقوى الأدوات <span class="text-gradient">مجاناً بالكامل</span></h2>
+            <p style="color: var(--text-secondary); margin-top: 16px;">مجموعة مختارة من أفضل 15 مؤشر وروبوت تداول، متاحة
+                الآن للتحميل المجاني.</p>
         </div>
-        <div class="faq-container">
-            <!-- Col 1 -->
-            <div class="faq-item" onclick="this.classList.toggle('active')">
-                <div class="faq-question">
-                    هل يعمل المؤشر على ميتاتريدر 4 (MT4)؟
-                    <i class="fas fa-chevron-down"></i>
+
+        <div class="store-grid">
+            <!-- 15 Products -->
+            <div class="product-card reveal">
+                <div class="card-header">
+                    <span class="profit-badge">94% Win Rate</span>
+                    <span class="product-tag">Expert Advisor</span>
                 </div>
-                <div class="faq-answer">
-                    لا، هذا الإصدار مبني خصيصاً لمنصة MetaTrader 5 (MT5) للاستفادة من قدراتها المتطورة في المعالجة
-                    والسرعة. لا يمكن تشغيله على MT4.
-                </div>
+                <h3>Nexus EA Forex MT5</h3>
+                <p class="product-desc">نظام تداول آلي مبني على خوارزميات الذكاء الاصطناعي.</p>
+                <span class="product-price">FREE</span>
+                <a href="https://infinityalgoacademy.net/item/nexus-ea-forex-mt5/" class="btn btn-primary btn-sm"
+                    target="_blank">تحميل مجاني</a>
             </div>
 
-            <div class="faq-item" onclick="this.classList.toggle('active')">
-                <div class="faq-question">
-                    هل يعيد المؤشر رسم نفسه (Repaint)؟
-                    <i class="fas fa-chevron-down"></i>
+            <div class="product-card reveal" style="transition-delay: 0.05s;">
+                <div class="card-header">
+                    <span class="profit-badge">88% Accuracy</span>
+                    <span class="product-tag">Expert Advisor</span>
                 </div>
-                <div class="faq-answer">
-                    إطلاقاً. بمجرد إغلاق الشمعة وتأكيد الإشارة أو المستوى (مثل خطوط A و C)، تثبت الإشارة ولا تتغير أبداً
-                    مهما حدث للسعر لاحقاً.
-                </div>
+                <h3>Pivot Killer EA</h3>
+                <p class="product-desc">روبوت يعتمد على مستويات البيفوت لاقتناص الانعكاسات.</p>
+                <span class="product-price">FREE</span>
+                <a href="https://infinityalgoacademy.net/item/pivot-killer-ea/" class="btn btn-outline btn-sm"
+                    target="_blank">تحميل مجاني</a>
             </div>
 
-            <div class="faq-item" onclick="this.classList.toggle('active')">
-                <div class="faq-question">
-                    ما هي أفضل الأزواج للتداول بهذا المؤشر؟
-                    <i class="fas fa-chevron-down"></i>
+            <div class="product-card reveal" style="transition-delay: 0.1s;">
+                <div class="card-header">
+                    <span class="profit-badge">92% Profit</span>
+                    <span class="product-tag">Expert Advisor</span>
                 </div>
-                <div class="faq-answer">
-                    المؤشر يعمل بكفاءة عالية على جميع الأزواج، ولكنه يلمع بشكل خاص مع الأدوات ذات السيولة العالية مثل
-                    الذهب (XAUUSD)، المؤشرات (NASDAQ, US30)، والأزواج الرئيسية (EURUSD, GBPUSD).
-                </div>
-            </div>
-
-            <div class="faq-item" onclick="this.classList.toggle('active')">
-                <div class="faq-question">
-                    كيف يمكنني تثبيت المؤشر على المنصة؟
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="faq-answer">
-                    الأمر بسيط: حمل الملف > افتح MT5 > اختر File > Open Data Folder > اذهب إلى MQL5/Indicators > الصق
-                    الملف هناك > أعد تشغيل المنصة.
-                </div>
-            </div>
-
-            <div class="faq-item" onclick="this.classList.toggle('active')">
-                <div class="faq-question">
-                    هل يمكنني استخدامه على الموبايل؟
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="faq-answer">
-                    تطبيقات MT5 للموبايل لا تدعم المؤشرات الخارجية المخصصة (.ex5). ولكن يمكنك تثبيته على الكمبيوتر (أو
-                    VPS) وتفعيل التنبيهات لتصلك على هاتفك فوراً.
-                </div>
-            </div>
-
-            <div class="faq-item" onclick="this.classList.toggle('active')">
-                <div class="faq-question">
-                    ما هو أفضل إطار زمني (Timeframe)؟
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="faq-answer">
-                    استراتيجية ACD تعتمد بشكل كبير على تحديد نطاق "Opening Range". الإطارات الزمنية 30 دقيقة (M30)
-                    والساعة (H1) هي الأكثر دقة واستقراراً لهذه الاستراتيجية.
-                </div>
-            </div>
-
-            <!-- Col 2 -->
-            <div class="faq-item" onclick="this.classList.toggle('active')">
-                <div class="faq-question">
-                    كيف أحدد وقف الخسارة والهدف؟
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="faq-answer">
-                    القاعدة الذهبية لاستراتيجية ACD: وقف الخسارة يكون عادةً عند الطرف المقابل لنطاق الافتتاح (OR)،
-                    والهدف يكون ضعف المسافة (Risk:Reward 1:2) أو عند أقرب مستوى دعم/مقاومة تالي.
-                </div>
-            </div>
-
-            <div class="faq-item" onclick="this.classList.toggle('active')">
-                <div class="faq-question">
-                    هل المؤشر مجاني بالكامل؟
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="faq-answer">
-                    نعم، النسخة الحالية متاحة للتحميل مجاناً عبر موقعنا. نحن نقدم أدوات مدفوعة أخرى، لكن هذا المؤشر هو
-                    هدية لمجتمع المتداولين.
-                </div>
-            </div>
-
-            <div class="faq-item" onclick="this.classList.toggle('active')">
-                <div class="faq-question">
-                    هل يمكن دمج هذا المؤشر مع استراتيجيات أخرى؟
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="faq-answer">
-                    بالتأكيد. ACD ممتاز كنظام "فلترة". يمكنك استخدامه مع Smart Money Concepts (SMC) أو التحليل الموجي
-                    لتأكيد مناطق الدخول القوية وتجنب التداولات الضعيفة.
-                </div>
-            </div>
-
-            <div class="faq-item" onclick="this.classList.toggle('active')">
-                <div class="faq-question">
-                    ماذا أفعل إذا لم يظهر المؤشر على الشارت؟
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="faq-answer">
-                    تأكد أولاً أنك وضعت الملف في مجلد Indicators الصحيح. وثانياً، تأكد من تفعيل خيار "Allow DLL imports"
-                    في إعدادات المنصة (Tools > Options > Expert Advisors).
-                </div>
-            </div>
-
-            <div class="faq-item" onclick="this.classList.toggle('active')">
-                <div class="faq-question">
-                    هل يوجد إعدادات خاصة للمؤشر؟
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="faq-answer">
-                    المؤشر يأتي بإعدادات افتراضية موزونة تناسب العملات والذهب. يمكنك تعديل ألوان الخطوط وتوقيت بداية
-                    الجلسة (Session Start) حسب توقيت الوسيط الخاص بك.
-                </div>
-            </div>
-
-            <div class="faq-item" onclick="this.classList.toggle('active')">
-                <div class="faq-question">
-                    هل يعمل على الحسابات التجريبية والحقيقية؟
-                    <i class="fas fa-chevron-down"></i>
-                </div>
-                <div class="faq-answer">
-                    نعم، يعمل بلا قيود على أي نوع حساب (Demo, Real, Cent) ولدى أي شركة وساطة (Broker) تدعم MT5.
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Related Products -->
-    <section id="related" class="section-padding section-bg-card">
-        <div class="section-header">
-            <h2>منتجات ذات صلة</h2>
-            <p>اكتشف المزيد من الأدوات الاحترافية في متجرنا.</p>
-        </div>
-        <div class="products-grid">
-            <!-- 1. Nexus EA -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/nexus-ea-forex-mt5/" target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-chart-pie"></i></div>
-                    <div class="product-info">
-                        <h3>Nexus EA Forex MT5</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
-            </div>
-            <!-- 2. Pivot Killer -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/pivot-killer-ea/" target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-robot"></i></div>
-                    <div class="product-info">
-                        <h3>Pivot Killer EA</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
-            </div>
-            <!-- 3. Flip Bot -->
-            <div class="product-card">
+                <h3>Flip Bot EA - Ultimate</h3>
+                <p class="product-desc">أقوى روبوت شامل لإدارة الصفقات على MT5.</p>
+                <span class="product-price">FREE</span>
                 <a href="https://infinityalgoacademy.net/item/flip-bot-ea-the-ultimate-automated-trading-bot-for-metatrader-5/"
-                    target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-sync-alt"></i></div>
-                    <div class="product-info">
-                        <h3>Flip Bot EA</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
+                    class="btn btn-outline btn-sm" target="_blank">تحميل مجاني</a>
             </div>
-            <!-- 4. TradingView Bundle -->
-            <div class="product-card">
+
+            <div class="product-card reveal">
+                <div class="card-header">
+                    <span class="profit-badge">80+ Tools</span>
+                    <span class="product-tag">Bundle</span>
+                </div>
+                <h3>80+ TradingView Bundle</h3>
+                <p class="product-desc">حزمة ضخمة تضم نخبة مؤشرات TradingView.</p>
+                <span class="product-price">FREE</span>
                 <a href="https://infinityalgoacademy.net/item/80-pro-tradingview-indicators-bundle-trade-smarter-with-one-powerful-system/"
-                    target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-layer-group"></i></div>
-                    <div class="product-info">
-                        <h3>80+ Pro TradingView Bundle</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
+                    class="btn btn-outline btn-sm" target="_blank">تحميل مجاني</a>
             </div>
-            <!-- 5. Trend Lines Pro -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/indicator-trend-lines-pro-mt4/" target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-chart-line"></i></div>
-                    <div class="product-info">
-                        <h3>Trend Lines Pro MT4</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
+
+            <div class="product-card reveal" style="transition-delay: 0.05s;">
+                <div class="card-header">
+                    <span class="profit-badge">90% Precision</span>
+                    <span class="product-tag">Indicator</span>
+                </div>
+                <h3>Trend Lines Pro MT4</h3>
+                <p class="product-desc">مؤشر رسم خطوط الاتجاه التلقائي بدقة عالية.</p>
+                <span class="product-price">FREE</span>
+                <a href="https://infinityalgoacademy.net/item/indicator-trend-lines-pro-mt4/"
+                    class="btn btn-outline btn-sm" target="_blank">تحميل مجاني</a>
             </div>
-            <!-- 6. Alpha Hunter -->
-            <div class="product-card">
+
+            <div class="product-card reveal" style="transition-delay: 0.1s;">
+                <div class="card-header">
+                    <span class="profit-badge">Multi-TF</span>
+                    <span class="product-tag">System</span>
+                </div>
+                <h3>Alpha Hunter System MTF</h3>
+                <p class="product-desc">نظام متكامل لتحليل الفريمات المتعددة كهدية.</p>
+                <span class="product-price">FREE</span>
                 <a href="https://infinityalgoacademy.net/item/alpha-hunter-system-mtf-risk-manager-full-explanation/"
-                    target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-shield-alt"></i></div>
-                    <div class="product-info">
-                        <h3>Alpha Hunter System</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
+                    class="btn btn-outline btn-sm" target="_blank">تحميل مجاني</a>
             </div>
-            <!-- 7. Mad Turtle -->
-            <div class="product-card">
+
+            <div class="product-card reveal">
+                <div class="card-header">
+                    <span class="profit-badge">95% AI Tech</span>
+                    <span class="product-tag">AI Bot</span>
+                </div>
+                <h3>Mad Turtle AI Bot</h3>
+                <p class="product-desc">بوت تداول يعتمد على تعلم الآلة العصبي المتطور.</p>
+                <span class="product-price">FREE</span>
                 <a href="https://infinityalgoacademy.net/item/ai-machine-learning-trading-bot-mad-turtle/"
-                    target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-microchip"></i></div>
-                    <div class="product-info">
-                        <h3>AI Machine Learning Bot</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
+                    class="btn btn-outline btn-sm" target="_blank">تحميل مجاني</a>
             </div>
-            <!-- 8. Footprint Pro -->
-            <div class="product-card">
+
+            <div class="product-card reveal" style="transition-delay: 0.05s;">
+                <div class="card-header">
+                    <span class="profit-badge">Volume Flow</span>
+                    <span class="product-tag">Indicator</span>
+                </div>
+                <h3>Footprint Price Action Pro</h3>
+                <p class="product-desc">مؤشر تحليل الفوليوم العنقودي لمنصة NinjaTrader.</p>
+                <span class="product-price">FREE</span>
                 <a href="https://infinityalgoacademy.net/item/footprint-price-action-pro-indicator-in-ninjatrader/"
-                    target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-shoe-prints"></i></div>
-                    <div class="product-info">
-                        <h3>Footprint Price Action Pro</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
+                    class="btn btn-outline btn-sm" target="_blank">تحميل مجاني</a>
             </div>
-            <!-- 9. Volume Mas -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/volume-mas-oscillator-lyro-rs/" target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-volume-up"></i></div>
-                    <div class="product-info">
-                        <h3>Volume Mas Oscillator</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
+
+            <div class="product-card reveal" style="transition-delay: 0.1s;">
+                <div class="card-header">
+                    <span class="profit-badge">Gold Expert</span>
+                    <span class="product-tag">Expert Advisor</span>
+                </div>
+                <h3>Orion Gold Scalper EA</h3>
+                <p class="product-desc">روبوت متخصص في سكالبينج الذهب على MT4.</p>
+                <span class="product-price">FREE</span>
+                <a href="https://infinityalgoacademy.net/item/orion-gold-scalper-ea-v4-0-mt4/"
+                    class="btn btn-outline btn-sm" target="_blank">تحميل مجاني</a>
             </div>
-            <!-- 10. SFP LuxAlgo -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/swing-failure-pattern-luxalgo-v2-ex4/" target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-exchange-alt"></i></div>
-                    <div class="product-info">
-                        <h3>SFP LuxAlgo V2</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
+
+            <div class="product-card reveal">
+                <div class="card-header">
+                    <span class="profit-badge">Gen XII</span>
+                    <span class="product-tag">Expert Advisor</span>
+                </div>
+                <h3>AI GEN XII EA MT4</h3>
+                <p class="product-desc">الجيل الثاني عشر من بوتات التداول الذكي الآلي.</p>
+                <span class="product-price">FREE</span>
+                <a href="https://infinityalgoacademy.net/item/ai-gen-xii-ea-v2-5-mt4/" class="btn btn-outline btn-sm"
+                    target="_blank">تحميل مجاني</a>
             </div>
-            <!-- 11. ATR Momentum -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/atr-momentum-color-mql5/" target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-tachometer-alt"></i></div>
-                    <div class="product-info">
-                        <h3>ATR Momentum Color</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
+
+            <div class="product-card reveal" style="transition-delay: 0.05s;">
+                <div class="card-header">
+                    <span class="profit-badge">Free Entry</span>
+                    <span class="product-tag">Free Tool</span>
+                </div>
+                <h3>Goldfinch EA MT4</h3>
+                <p class="product-desc">روبوت تداول مجاني للمبتدئين في سوق الفوركس.</p>
+                <span class="product-price">FREE</span>
+                <a href="https://infinityalgoacademy.net/item/free-goldfinch-ea-for-metatrader/"
+                    class="btn btn-outline btn-sm" target="_blank">تحميل مجاني</a>
             </div>
-            <!-- 12. Lucky Reversal -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/lucky-reversal-indicator/" target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-undo"></i></div>
-                    <div class="product-info">
-                        <h3>Lucky Reversal Indicator</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
-            </div>
-            <!-- 13. Buy Sell Magic -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/buy-sell-magic-indicator/" target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-magic"></i></div>
-                    <div class="product-info">
-                        <h3>Buy Sell Magic Indicator</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
-            </div>
-            <!-- 14. Taurus Binary -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/taurus-binary-ret-indicator/" target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-bullhorn"></i></div>
-                    <div class="product-info">
-                        <h3>Taurus Binary Ret</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
-            </div>
-            <!-- 15. Orion Gold -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/orion-gold-scalper-ea-v4-0-mt4/" target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-gem"></i></div>
-                    <div class="product-info">
-                        <h3>Orion Gold Scalper EA</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
-            </div>
-            <!-- 16. AI GEN XII -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/ai-gen-xii-ea-v2-5-mt4/" target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-brain"></i></div>
-                    <div class="product-info">
-                        <h3>AI GEN XII EA</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
-            </div>
-            <!-- 17. Goldfinch -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/free-goldfinch-ea-for-metatrader/" target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-dove"></i></div>
-                    <div class="product-info">
-                        <h3>Goldfinch EA</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
-            </div>
-            <!-- 18. Easy Trade Panel -->
-            <div class="product-card">
+
+            <div class="product-card reveal" style="transition-delay: 0.1s;">
+                <div class="card-header">
+                    <span class="profit-badge">One-Click</span>
+                    <span class="product-tag">Utility</span>
+                </div>
+                <h3>Easy Trade Panel MT5</h3>
+                <p class="product-desc">لوحة تحكم احترافية لإدارة الصفقات واللوت بذكاء.</p>
+                <span class="product-price">FREE</span>
                 <a href="https://infinityalgoacademy.net/item/easy-trade-panel-expert-for-metatrader-5-download-free/"
-                    target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-table"></i></div>
-                    <div class="product-info">
-                        <h3>Easy Trade Panel</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
+                    class="btn btn-outline btn-sm" target="_blank">تحميل مجاني</a>
             </div>
-            <!-- 19. Corex G -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/corex-g-ea-v1-7-mt4/" target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-robot"></i></div>
-                    <div class="product-info">
-                        <h3>Corex G EA v1.7</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
+
+            <div class="product-card reveal">
+                <div class="card-header">
+                    <span class="profit-badge">Advanced Gold</span>
+                    <span class="product-tag">Expert Advisor</span>
+                </div>
+                <h3>Advanced Gold Trading V6</h3>
+                <p class="product-desc">نظام متطور لتداول الذهب بأمان وسرعة فائقة.</p>
+                <span class="product-price">FREE</span>
+                <a href="https://infinityalgoacademy.net/item/advanced-gold-trading-v6-4-ea-mt4/"
+                    class="btn btn-outline btn-sm" target="_blank">تحميل مجاني</a>
             </div>
-            <!-- 20. Gold Trading AI -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/gold-trading-ai-ea-mt4-robot-for-free/" target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-coins"></i></div>
-                    <div class="product-info">
-                        <h3>Gold Trading AI EA</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
+
+            <div class="product-card reveal" style="transition-delay: 0.05s;">
+                <div class="card-header">
+                    <span class="profit-badge">Opening Range</span>
+                    <span class="product-tag">Indicator</span>
+                </div>
+                <h3>ACD Mark Fisher MT5</h3>
+                <p class="product-desc">أدوات تحليل الـ Opening Range الأصلية والمجانية.</p>
+                <span class="product-price">FREE</span>
+                <a href="https://infinityalgoacademy.net/item/acd-indicator-for-metatrader-5-download-free/"
+                    class="btn btn-outline btn-sm" target="_blank">تحميل مجاني</a>
             </div>
-            <!-- 21. Dynamic Pips -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/free-download-dynamic-pips-ea-v2-2-mt4/" target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-chart-bar"></i></div>
-                    <div class="product-info">
-                        <h3>Dynamic Pips EA v2.2</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
-            </div>
-            <!-- 22. Deep Scalper -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/free-download-deep-scalper-ea-v5-master-mt4/"
-                    target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-crosshairs"></i></div>
-                    <div class="product-info">
-                        <h3>Deep Scalper EA v5</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
-            </div>
-            <!-- 23. Session Time -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/trading-session-time-indicator-for-mt4-mt5/"
-                    target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-clock"></i></div>
-                    <div class="product-info">
-                        <h3>Trading Session Time</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
-            </div>
-            <!-- 24. Liquidity & Sentiment -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/forex-liquidity-and-market-sentiment-indicator-mt4-mt5-free-download/"
-                    target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-water"></i></div>
-                    <div class="product-info">
-                        <h3>Liquidity & Sentiment</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
-            </div>
-            <!-- 25. FX Trade Detector -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/fx-trade-detector-ea-mt4-for-free-download/"
-                    target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-search-dollar"></i></div>
-                    <div class="product-info">
-                        <h3>FX Trade Detector EA</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
-            </div>
-            <!-- 26. Advanced Hedge -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/advanced-hedge-ea-v4-0-mt4/" target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-balance-scale"></i></div>
-                    <div class="product-info">
-                        <h3>Advanced Hedge EA</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
-            </div>
-            <!-- 27. Advanced Gold -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/advanced-gold-trading-v6-4-ea-mt4/" target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-gold-bar"></i></div>
-                    <div class="product-info">
-                        <h3>Advanced Gold Trading</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
-            </div>
-            <!-- 28. Big Forex Players -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/big-forex-players-ea-mt4-free-download/" target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-users"></i></div>
-                    <div class="product-info">
-                        <h3>Big Forex Players EA</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
-            </div>
-            <!-- 29. Gold Reaper -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/the-gold-reaper-ea-v1-5-mt4-free-download/"
-                    target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-skull"></i></div>
-                    <div class="product-info">
-                        <h3>The Gold Reaper EA</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
-            </div>
-            <!-- 30. AI SuperTrend -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/ai-supertrend-clustering-oscillator-for-mt5-download-free/"
-                    target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-wave-square"></i></div>
-                    <div class="product-info">
-                        <h3>AI SuperTrend Clustering</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
-            </div>
-            <!-- 31. BPR SFP -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/bpr-sfp-indicator-ict-in-metatrader-5-free/"
-                    target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-project-diagram"></i></div>
-                    <div class="product-info">
-                        <h3>BPR SFP Indicator</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
-            </div>
-            <!-- 32. Perfect Trendline -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/perfect-trendline-indicator-for-mt5/" target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-slash"></i></div>
-                    <div class="product-info">
-                        <h3>Perfect Trendline</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
-            </div>
-            <!-- 33. FVG Indicator -->
-            <div class="product-card">
+
+            <div class="product-card reveal" style="transition-delay: 0.1s;">
+                <div class="card-header">
+                    <span class="profit-badge">FVG Liquidity</span>
+                    <span class="product-tag">Indicator</span>
+                </div>
+                <h3>FVG Mitigation Signals</h3>
+                <p class="product-desc">مؤشر كشف الفجوات السعرية (FVG) لتحليل السيولة.</p>
+                <span class="product-price">FREE</span>
                 <a href="https://infinityalgoacademy.net/item/fvg-instantaneous-mitigation-signals-indicator-mt5/"
-                    target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-signal"></i></div>
-                    <div class="product-info">
-                        <h3>FVG Indicator MT5</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
+                    class="btn btn-outline btn-sm" target="_blank">تحميل مجاني</a>
             </div>
-            <!-- 34. CCI Histogram -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/cci-histogram-indicator-for-metatrader-5-download/"
-                    target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-chart-bar"></i></div>
-                    <div class="product-info">
-                        <h3>CCI Histogram Indicator</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
-            </div>
-            <!-- 35. Channel Zig Zag -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/channel-zig-zag-indicator-for-mt5-download-free/"
-                    target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-bolt"></i></div>
-                    <div class="product-info">
-                        <h3>Channel Zig Zag</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
-            </div>
-            <!-- 36. Risk Reward -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/risk-reward-ratio-calculator-indicator-for-mt5-free/"
-                    target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-calculator"></i></div>
-                    <div class="product-info">
-                        <h3>Risk Reward Calc</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
-            </div>
-            <!-- 37. ICT Entry V1 -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/ict-entry-v1-tradingview-free-download/" target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-door-open"></i></div>
-                    <div class="product-info">
-                        <h3>ICT Entry V1</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
-            </div>
-            <!-- 38. Deeptest -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/deeptest-tradinview-indicator-free-download/"
-                    target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-vial"></i></div>
-                    <div class="product-info">
-                        <h3>Deeptest Indicator</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
-            </div>
-            <!-- 39. Alien Mattrix -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/alien-mattrix-ea-mt4/" target="_blank">
-                    <div class="product-placeholder"><i class="fab fa-reddit-alien"></i></div>
-                    <div class="product-info">
-                        <h3>Alien Mattrix EA</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
-            </div>
-            <!-- 40. LuxAlgo Concepts -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/luxalgo-price-action-concepts-lifetime/" target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-book"></i></div>
-                    <div class="product-info">
-                        <h3>LuxAlgo Concepts</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
-            </div>
-            <!-- 41. Gains Algo Alpha -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/gains-algo-alpha-v2-download-free-tradingview-pinescript/"
-                    target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-chart-area"></i></div>
-                    <div class="product-info">
-                        <h3>Gains Algo Alpha</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
-            </div>
-            <!-- 42. Arbitrage Detector -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/arbitrage-detector-luxalgo-download-free/"
-                    target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-balance-scale-right"></i></div>
-                    <div class="product-info">
-                        <h3>Arbitrage Detector</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
-            </div>
-            <!-- 43. Million Moves -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/million-moves-algo-v4-3/" target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-arrows-alt"></i></div>
-                    <div class="product-info">
-                        <h3>Million Moves Algo</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
-            </div>
-            <!-- 44. Infinity Algo Remake -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/infinity_algo_-_remake/" target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-infinity"></i></div>
-                    <div class="product-info">
-                        <h3>Infinity Algo Remake</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
-            </div>
-            <!-- 45. VWAP Z-Score -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/volume-weighted-price-z-score-quantalgo/" target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-sort-numeric-up"></i></div>
-                    <div class="product-info">
-                        <h3>VWAP Z-Score</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
-            </div>
-            <!-- 46. Delta Reaction -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/delta-reaction-zones-boswaves/" target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-radiation"></i></div>
-                    <div class="product-info">
-                        <h3>Delta Reaction Zones</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
-            </div>
-            <!-- 47. Algo Samurai -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/algo-samurai-ea-full/" target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-khanda"></i></div>
-                    <div class="product-info">
-                        <h3>Algo Samurai EA</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
-            </div>
-            <!-- 48. Zone to Zone -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/zone-to-zone-indicator-for-metatrader4-source-code/"
-                    target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-map-signs"></i></div>
-                    <div class="product-info">
-                        <h3>Zone to Zone</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
-            </div>
-            <!-- 49. FXSSI Orderbook -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/fxssi-orderbook-pro/" target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-book-open"></i></div>
-                    <div class="product-info">
-                        <h3>FXSSI Orderbook</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
-            </div>
-            <!-- 50. Trading Blueprint -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/indicator-combined-advanced-trading-blueprint-for-tradingview/"
-                    target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-drafting-compass"></i></div>
-                    <div class="product-info">
-                        <h3>Trading Blueprint</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
-            </div>
-            <!-- 51. Trade Assistant -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/expert-trade-assistant-mt4-v10-23/" target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-hands-helping"></i></div>
-                    <div class="product-info">
-                        <h3>Trade Assistant EA</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
-            </div>
-            <!-- 52. Quantum Queen -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/expert-quantum-queen-mt5-v2-6-dll-5430/" target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-chess-queen"></i></div>
-                    <div class="product-info">
-                        <h3>Quantum Queen MT5</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
-            </div>
-            <!-- 53. Fish n Grid -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/fish-n-grid/" target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-fish"></i></div>
-                    <div class="product-info">
-                        <h3>Fish n Grid</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
-            </div>
-            <!-- 54. Goldbot One -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/expert-goldbot-one-mt4-v1-6-set/" target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-robot"></i></div>
-                    <div class="product-info">
-                        <h3>Goldbot One MT4</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
-            </div>
-            <!-- 55. Buy Sell MR -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/buy-sell-mr-mt4-hsn-algo-v9-5-tradingview/"
-                    target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-exchange-alt"></i></div>
-                    <div class="product-info">
-                        <h3>Buy Sell MR HSN</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
-            </div>
-            <!-- 56. SMT Double Div -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/smt-double-div-tradingfinder-indicator-in-ninjatrader-free/"
-                    target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-divide"></i></div>
-                    <div class="product-info">
-                        <h3>SMT Double Div</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
-            </div>
-            <!-- 57. AI GEN XII Source -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/ai-gen-xii-ea-v2-5-mt4-mq4/" target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-code"></i></div>
-                    <div class="product-info">
-                        <h3>AI GEN XII Source</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
-            </div>
-            <!-- 58. Fast Scalping AI -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/fast-scalping-ai-ninjatrader-8-indicator-free/"
-                    target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-bolt"></i></div>
-                    <div class="product-info">
-                        <h3>Fast Scalping AI</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
-            </div>
-            <!-- 59. Footprint Orderflow -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/footprint-orderflow-indicator-in-ninjatrader/"
-                    target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-shoe-prints"></i></div>
-                    <div class="product-info">
-                        <h3>Footprint Orderflow</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
-            </div>
-            <!-- 60. InfinityRSI -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/infinityrsi-divergence-v-6-2/" target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-wave-square"></i></div>
-                    <div class="product-info">
-                        <h3>InfinityRSI Div</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
-            </div>
-            <!-- 61. RSI Monitor -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/rsi-monitor-high-low-mtf-time-filter/" target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-desktop"></i></div>
-                    <div class="product-info">
-                        <h3>RSI Monitor MTF</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
-            </div>
-            <!-- 62. All in One Course -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/all-in-one-course/" target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-graduation-cap"></i></div>
-                    <div class="product-info">
-                        <h3>All in One Course</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
-            </div>
-            <!-- 63. Pine Script Code -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/100-this-pine-script-code-is-subject/" target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-code"></i></div>
-                    <div class="product-info">
-                        <h3>Pine Script Code</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
-            </div>
-            <!-- 64. Hyper Spectral -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/hyper-spectral-neural-flow-foe-tradingview-pinescript-free-download/"
-                    target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-network-wired"></i></div>
-                    <div class="product-info">
-                        <h3>Hyper Spectral Neural</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
-            </div>
-            <!-- 65. SFP LuxAlgo Source -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/swing-failure-pattern-luxalgo-v2-mql-code-source/"
-                    target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-file-code"></i></div>
-                    <div class="product-info">
-                        <h3>SFP LuxAlgo Source</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
-            </div>
-            <!-- 66. Corex G 1.6 -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/corex-g-ea-v1-6-mt4-robot/" target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-robot"></i></div>
-                    <div class="product-info">
-                        <h3>Corex G EA v1.6</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
-            </div>
-            <!-- 67. Supply Demand Pro -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/supply-demand-pro-indicator/" target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-chart-area"></i></div>
-                    <div class="product-info">
-                        <h3>Supply Demand Pro</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
-            </div>
-            <!-- 68. Ultimate Reversal -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/ultimate-reversal-indicator/" target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-undo-alt"></i></div>
-                    <div class="product-info">
-                        <h3>Ultimate Reversal</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
-            </div>
-            <!-- 69. SMC LuxAlgo -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/smart-money-concepts-luxalgo/" target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-money-bill-wave"></i></div>
-                    <div class="product-info">
-                        <h3>SMC LuxAlgo</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
-            </div>
-            <!-- 70. Price Action Toolkit -->
-            <div class="product-card">
-                <a href="https://infinityalgoacademy.net/item/price-action-toolkit/" target="_blank">
-                    <div class="product-placeholder"><i class="fas fa-tools"></i></div>
-                    <div class="product-info">
-                        <h3>Price Action Toolkit</h3><span class="btn-sm">عرض التفاصيل</span>
-                    </div>
-                </a>
-            </div>
-
         </div>
-    </section>
 
-    <!-- Visual Presentation / Screenshot -->
-    <section class="mockup-section">
-        <div class="mockup-container">
-            <img src="assets/hero.webp" alt="ACD Indicator Interface" class="mockup-img">
+        <div style="text-align: center; margin-top: 80px;">
+            <a href="products.html" class="btn btn-primary" style="padding: 20px 60px;">مشاهدة جميع الأقسام
+                والمنتجات</a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="footer-content">
-            <h3>InfinityAlgo Academy</h3>
-            <p>نقدم أفضل الحلول البرمجية للمتداولين حول العالم.</p>
-
-            <div class="footer-contact">
-                <div><i class="fas fa-phone"></i> +213 795 97 57 12</div>
-                <div><i class="fas fa-envelope"></i> me@infinityalgoacademy.net</div>
-                <a href="https://t.me/King_arius_dz" target="_blank"><i class="fab fa-telegram-plane"></i>
-                    @King_arius_dz</a>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-logo mono">INFINITY<span style="color: var(--accent);">ALGO</span></div>
+                    <p style="color: var(--text-secondary);">نبتكر حلولاً رقمية تجعل التداول الاحترافي متاحاً للجميع
+                        مجاناً.</p>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 20px;">الروابط</h4>
+                    <a href="index.html" class="footer-link">الرئيسية</a>
+                    <a href="about.html" class="footer-link">من نحن</a>
+                    <a href="https://t.me/King_arius_dz" class="footer-link">تيليجرام</a>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 20px;">القانونية</h4>
+                    <a href="privacy.html" class="footer-link">سياسة الخصوصية</a>
+                    <a href="disclaimer.html" class="footer-link">إخلاء المسؤولية</a>
+                </div>
             </div>
-
-            <div class="socials">
-                <a href="https://infinityalgoacademy.net" target="_blank"><i class="fas fa-globe"></i></a>
-                <a href="https://infinityalgoacademy.net/shop" target="_blank"><i class="fas fa-shopping-cart"></i></a>
-                <a href="https://infinityalgoacademy.net/community" target="_blank"><i class="fas fa-users"></i></a>
-                <a href="https://t.me/InfinityAlgo_Group_Topics" target="_blank"><i class="fab fa-telegram"></i></a>
-                <a href="https://github.com/InfinityAlgo-Academy" target="_blank"><i class="fab fa-github"></i></a>
-            </div>
-
-            <div class="copyright">
-                &copy; 2026 InfinityAlgo-Academy. All rights reserved.
+            <div style="text-align: center; margin-top: 60px; color: var(--text-dim); font-size: 0.8rem;">
+                &copy; 2026 InfinityAlgo Academy. Gifted with passion.
             </div>
         </div>
     </footer>
@@ -1068,6 +324,5 @@
     <!-- Scripts -->
     <script src="script.js"></script>
 </body>
-
 
 </html>

@@ -5,223 +5,110 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>من نحن | InfinityAlgo Academy</title>
-    <meta name="description" content="تعرف على InfinityAlgo Academy - منصتك الرائدة للأدوات والمؤشرات الاحترافية.">
 
-    <!-- CSS -->
+    <!-- CSS & Fonts -->
     <link rel="stylesheet" href="style.css">
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap"
-        rel="stylesheet">
-
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <style>
-        .about-hero {
-            height: 50vh;
-            background: linear-gradient(rgba(11, 14, 20, 0.8), rgba(11, 14, 20, 0.9)), url('assets/hero.webp');
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
-
-        .about-text p {
-            font-size: 1.1rem;
-            color: var(--text-muted);
-            margin-bottom: 1.5rem;
-            line-height: 1.8;
-        }
-
-        .about-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .about-card {
-            background: var(--card-bg);
-            padding: 2rem;
-            border-radius: 12px;
-            border: 1px solid rgba(255, 255, 255, 0.05);
-        }
-
-        .about-card h3 {
-            color: var(--primary);
-            margin-bottom: 1rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
 
+    <div class="mesh-gradient"></div>
+
     <!-- Header -->
     <header class="site-header">
         <nav class="navbar">
-            <a href="index.html" class="brand">InfinityAlgo</a>
+            <a href="index.html" class="mono"
+                style="font-weight: 800; font-size: 1.2rem; color: #fff; text-decoration: none;">
+                INFINITY<span style="color: var(--accent);">ALGO</span>
+            </a>
 
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">الرئيسية</a></li>
+                <li><a href="products.html" class="nav-link">المؤشرات والبوتات</a></li>
+                <li><a href="resources.html" class="nav-link">المدونة التعليمية</a></li>
+                <li><a href="about.html" class="nav-link active">من نحن</a></li>
+                <li><a href="contact.html" class="nav-link">اتصل بنا</a></li>
+            </ul>
 
-            <div class="nav-menu" id="navMenu">
-                <a href="index.html" class="nav-link">الرئيسية</a>
-                <a href="index.html#features" class="nav-link">المميزات</a>
-                <a href="index.html#guide" class="nav-link">الدليل</a>
-                <a href="about.html" class="nav-link active">من نحن</a>
-                <a href="https://infinityalgoacademy.net/" class="btn-download" target="_blank">
-                    <i class="fas fa-external-link-alt"></i> زيارة المتجر
-                </a>
-            </div>
+            <a href="https://t.me/King_arius_dz" class="btn btn-outline">
+                تواصل معنا <i class="fab fa-telegram"></i>
+            </a>
         </nav>
     </header>
 
-    <!-- Hero -->
-    <section class="about-hero">
-        <div class="hero-content">
-            <h1>من نحن</h1>
-            <p>شريكك الموثوق في رحلة التداول الاحترافي</p>
+    <!-- Content -->
+    <section class="container" style="padding-top: 180px; padding-bottom: 100px;">
+        <div class="reveal" style="max-width: 800px; margin: 0 auto; text-align: center;">
+            <span class="badge">قصتنا</span>
+            <h1 class="text-gradient" style="margin-bottom: 32px;">نحن نكسر الحواجز بين المتداول <br>والتكنولوجيا
+                المؤسسية</h1>
+            <p style="color: var(--text-secondary); font-size: 1.25rem; line-height: 1.8;">
+                بدأت InfinityAlgo Academy برؤية بسيطة: تحويل الأدوات الرياضية المعقدة التي تستخدمها الصناديق الاستثمارية
+                إلى واجهات بديهية تمكن المتداول البسيط من اتخاذ قرارات مبنية على بيانات صلبة.
+            </p>
         </div>
-    </section>
 
-    <!-- About Content -->
-    <section class="section-padding section-bg-dark">
-        <div class="main-container">
-            <div class="about-text">
-                <h2>عن Infinity Algo Academy</h2>
-                <p>
-                    منصة Infinity Algo Academy هي وجهتك الأولى للأدوات البرمجية والمؤشرات الاحترافية، مصممة خصيصاً
-                    للمتداولين الذين يبحثون عن الوضوح، الهيكلة، واتخاذ القرارات المبنية على البيانات.
-                    في صناعة تعج بالتوصيات العشوائية والوعود غير الواقعية، نركز نحن على تقديم حلول تداول موثوقة وعملية
-                    تدعم التحليل الفني، إدارة المخاطر، والانضباط في التنفيذ.
-                </p>
+        <div class="bento-grid" style="margin-top: 80px;">
+            <div class="bento-item large reveal">
+                <h3>مهمتنا</h3>
+                <p style="color: var(--text-secondary); margin-top: 16px;">تمكين المتداول العربي بأدوات برمجية دقيقة
+                    ترفع من كفاءة قراراته وتقلل من العشوائية في السوق.</p>
+            </div>
+            <div class="bento-item small reveal" style="transition-delay: 0.1s; background: rgba(99, 102, 241, 0.05);">
+                <h3>رؤيتنا</h3>
+                <p style="color: var(--text-secondary); margin-top: 16px;">أن نكون الوجهة الأولى عالمياً في تطوير
+                    خوارزميات التداول المخصصة.</p>
+            </div>
+        </div>
 
-                <div class="about-grid">
-                    <div class="about-card">
-                        <h3><i class="fas fa-bullseye"></i> مهمتنا</h3>
-                        <p>تتمثل مهمتنا في جعل مؤشرات التداول عالية الجودة والأدوات الخوارزمية في متناول المتداولين في
-                            جميع أنحاء العالم، بغض النظر عن مستوى خبرتهم.</p>
-                        <p>نهدف إلى مساعدة المتداولين على:</p>
-                        <ul style="list-style: disc; padding-right: 1.5rem; color: var(--text-muted);">
-                            <li>تحليل الأسواق المالية بدقة أكبر.</li>
-                            <li>الحد من قرارات التداول العاطفية.</li>
-                            <li>بناء أنظمة تداول مهيكلة قائمة على المنطق والبيانات.</li>
-                        </ul>
+        <div class="reveal" style="margin-top: 100px;">
+            <div
+                style="background: var(--bg-card); border-radius: 40px; padding: 60px; border: 1px solid var(--border-light);">
+                <div class="grid-3" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px;">
+                    <div style="text-align: center;">
+                        <h4 style="font-size: 1.5rem; margin-bottom: 12px; color: #fff;">البرمجة النظيفة</h4>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem;">أكوادنا مكتوبة بأعلى المعايير لضمان
+                            سرعة الاستجابة.</p>
                     </div>
-
-                    <div class="about-card">
-                        <h3><i class="fas fa-layer-group"></i> ما نقدمه</h3>
-                        <p>تتخصص Infinity Algo Academy في:</p>
-                        <ul style="list-style: disc; padding-right: 1.5rem; color: var(--text-muted);">
-                            <li>مؤشرات تداول لمنصات MetaTrader و TradingView و NinjaTrader.</li>
-                            <li>المستشارون الخبراء (EAs) للتداول الآلي وشبه الآلي.</li>
-                            <li>أدوات تحليل السوق والمرافق التجارية.</li>
-                            <li>أدوات تداول مجانية ومدفوعة بأسعار في متناول الجميع.</li>
-                        </ul>
+                    <div style="text-align: center;">
+                        <h4 style="font-size: 1.5rem; margin-bottom: 12px; color: #fff;">المنطق المالي</h4>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem;">كل حركة للمؤشر مبنية على دراسة عميقة
+                            لسلوك السعر.</p>
                     </div>
-                </div>
-
-                <div class="section-header" style="margin-top: 4rem;">
-                    <h2>لماذا تختارنا؟</h2>
-                </div>
-
-                <div class="about-grid">
-                    <div class="about-card">
-                        <h3><i class="fas fa-check"></i> لماذا نحن؟</h3>
-                        <ul style="list-style: none; padding: 0; color: var(--text-muted);">
-                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-check"
-                                    style="color: var(--primary); margin-left: 0.5rem;"></i> نركز على الأدوات، وليس
-                                التوصيات.</li>
-                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-check"
-                                    style="color: var(--primary); margin-left: 0.5rem;"></i> نتجنب الادعاءات المبالغ
-                                فيها.</li>
-                            <li style="margin-bottom: 0.5rem;"><i class="fas fa-check"
-                                    style="color: var(--primary); margin-left: 0.5rem;"></i> أسعارنا شفافة وفي متناول
-                                الجميع.</li>
-                            <li><i class="fas fa-check" style="color: var(--primary); margin-left: 0.5rem;"></i> أدواتنا
-                                مناسبة للمبتدئين والمحترفين.</li>
-                        </ul>
-                        <p style="margin-top: 1rem;">نحن نعطي الأولوية للقيمة طويلة الأجل، والتعليم، والثقة بدلاً من
-                            تكتيكات التسويق قصيرة المدى.</p>
+                    <div style="text-align: center;">
+                        <h4 style="font-size: 1.5rem; margin-bottom: 12px; color: #fff;">الدعم المستمر</h4>
+                        <p style="color: var(--text-secondary); font-size: 0.9rem;">نحن معك خطوة بخطوة لضمان تحقيق أقصى
+                            استفادة.</p>
                     </div>
-
-                    <div class="about-grid">
-                        <div class="about-card">
-                            <h3><i class="fas fa-users"></i> من نخدم؟</h3>
-                            <ul style="list-style: disc; padding-right: 1.5rem; color: var(--text-muted);">
-                                <li>تجار التجزئة الباحثين عن أدوات احترافية.</li>
-                                <li>المتداولين الخوارزميين (Algo Traders).</li>
-                                <li>المهتمين بالتحليل الفني والاستراتيجيات المهيكلة.</li>
-                            </ul>
-                        </div>
-
-                        <div class="about-card">
-                            <h3><i class="fas fa-address-book"></i> تواصل معنا</h3>
-                            <ul style="list-style: none; padding: 0; color: var(--text-muted);">
-                                <li style="margin-bottom: 0.5rem;"><i class="fas fa-phone"
-                                        style="color: var(--primary); margin-left: 0.5rem;"></i> +213 795 97 57 12</li>
-                                <li style="margin-bottom: 0.5rem;"><i class="fas fa-envelope"
-                                        style="color: var(--primary); margin-left: 0.5rem;"></i>
-                                    me@infinityalgoacademy.net</li>
-                                <li><i class="fab fa-telegram-plane"
-                                        style="color: var(--primary); margin-left: 0.5rem;"></i> <a
-                                        href="https://t.me/King_arius_dz" target="_blank">@King_arius_dz</a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="about-card" style="margin-top: 2rem; border-color: var(--accent);">
-                        <h3><i class="fas fa-exclamation-triangle" style="color: var(--accent);"></i> الشفافية وتنويه
-                        </h3>
-                        <p>
-                            لا تقدم Infinity Algo Academy مشورة مالية أو توصيات استثمارية. جميع أدوات التداول مقدمة
-                            للأغراض
-                            التعليمية والتحليلية فقط. التداول ينطوي على مخاطر، والأداء السابق لا يضمن النتائج
-                            المستقبلية.
-                        </p>
-                        <p><strong>التزامنا:</strong> نحن ملتزمون بتحسين منصتنا باستمرار، وتوسيع مكتبة أدواتنا، والحفاظ
-                            على
-                            الشفافية مع مستخدمينا.</p>
-                    </div>
-
                 </div>
             </div>
+        </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="footer-content">
-            <h3>InfinityAlgo Academy</h3>
-            <p>نقدم أفضل الحلول البرمجية للمتداولين حول العالم.</p>
-
-            <div class="footer-contact">
-                <div><i class="fas fa-phone"></i> +213 795 97 57 12</div>
-                <div><i class="fas fa-envelope"></i> me@infinityalgoacademy.net</div>
-                <a href="https://t.me/King_arius_dz" target="_blank"><i class="fab fa-telegram-plane"></i>
-                    @King_arius_dz</a>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-logo mono">INFINITY<span style="color: var(--accent);">ALGO</span></div>
+                    <p style="color: var(--text-secondary);">نبتكر حلولاً رقمية تجعل التداول الاحترافي متاحاً للجميع
+                        مجاناً.</p>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 20px;">الروابط</h4>
+                    <a href="index.html" class="footer-link">الرئيسية</a>
+                    <a href="about.html" class="footer-link">من نحن</a>
+                    <a href="https://t.me/King_arius_dz" class="footer-link">تيليجرام</a>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 20px;">القانونية</h4>
+                    <a href="privacy.html" class="footer-link">سياسة الخصوصية</a>
+                    <a href="disclaimer.html" class="footer-link">إخلاء المسؤولية</a>
+                </div>
             </div>
-
-            <div class="socials">
-                <a href="https://infinityalgoacademy.net" target="_blank"><i class="fas fa-globe"></i></a>
-                <a href="https://infinityalgoacademy.net/shop" target="_blank"><i class="fas fa-shopping-cart"></i></a>
-                <a href="https://infinityalgoacademy.net/community" target="_blank"><i class="fas fa-users"></i></a>
-                <a href="https://t.me/InfinityAlgo_Group_Topics" target="_blank"><i class="fab fa-telegram"></i></a>
-                <a href="https://github.com/InfinityAlgo-Academy" target="_blank"><i class="fab fa-github"></i></a>
-            </div>
-
-            <div class="copyright">
-                &copy; 2026 InfinityAlgo-Academy. All rights reserved.
+            <div style="text-align: center; margin-top: 60px; color: var(--text-dim); font-size: 0.8rem;">
+                &copy; 2026 InfinityAlgo Academy. Gifted with passion.
             </div>
         </div>
     </footer>
