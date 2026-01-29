@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | InfinityAlgo Academy</title>
+    <meta name="description"
+        content="Get in touch with InfinityAlgo Academy. We're here to help with any questions about our products, support, or trading education.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="index.html" class="logo">
+                    <span class="logo-icon">∞</span>
+                    <span class="logo-text">InfinityAlgo Academy</span>
+                </a>
+
+                <div class="nav-menu" id="navMenu">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="product.html" class="nav-link">Product</a>
+                    <a href="shop.html" class="nav-link">Shop</a>
+                    <a href="docs.html" class="nav-link">Documentation</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                    <a href="contact.html" class="nav-link active">Contact</a>
+                    <a href="https://infinityalgoacademy.net/shop" class="btn-primary-nav">Buy Now</a>
+                </div>
+
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+        </div>
+
+        <div class="container">
+            <div class="contact-hero-content">
+                <span class="section-badge">Contact Us</span>
+                <h1 class="hero-title">Get in Touch</h1>
+                <p class="hero-description">
+                    Have questions? We're here to help. Reach out to our team and we'll get back to you as soon as
+                    possible.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-content">
+        <div class="container">
+            <div class="contact-layout">
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <h2 class="form-title">Send us a Message</h2>
+                    <p class="form-description">Fill out the form below and we'll respond within 24 hours.</p>
+
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Full Name *</label>
+                            <input type="text" id="name" name="name" class="form-input" placeholder="John Doe" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address *</label>
+                            <input type="email" id="email" name="email" class="form-input"
+                                placeholder="john@example.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="form-input"
+                                placeholder="+1 (555) 000-0000">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject *</label>
+                            <select id="subject" name="subject" class="form-input" required>
+                                <option value="">Select a subject</option>
+                                <option value="product">Product Inquiry</option>
+                                <option value="support">Technical Support</option>
+                                <option value="sales">Sales Question</option>
+                                <option value="partnership">Partnership</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message *</label>
+                            <textarea id="message" name="message" class="form-input form-textarea" rows="6"
+                                placeholder="Tell us how we can help you..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-primary btn-large btn-full">
+                            <span>Send Message</span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path
+                                    d="M18.3333 1.66667L9.16667 10.8333M18.3333 1.66667L12.5 18.3333L9.16667 10.8333M18.3333 1.66667L1.66667 7.5L9.16667 10.8333"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info-wrapper">
+                    <h2 class="info-title">Contact Information</h2>
+                    <p class="info-description">Reach out through any of these channels</p>
+
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M3 8L10.89 13.26C11.2187 13.4793 11.6049 13.5963 12 13.5963C12.3951 13.5963 12.7813 13.4793 13.11 13.26L21 8M5 19H19C19.5304 19 20.0391 18.7893 20.4142 18.4142C20.7893 18.0391 21 17.5304 21 17V7C21 6.46957 20.7893 5.96086 20.4142 5.58579C20.0391 5.21071 19.5304 5 19 5H5C4.46957 5 3.96086 5.21071 3.58579 5.58579C3.21071 5.96086 3 6.46957 3 7V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19Z"
+                                        stroke="url(#methodGrad1)" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <defs>
+                                        <linearGradient id="methodGrad1" x1="3" y1="5" x2="21" y2="19"
+                                            gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#6366F1" />
+                                            <stop offset="1" stop-color="#8B5CF6" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="method-content">
+                                <h3 class="method-title">Email</h3>
+                                <a href="mailto:me@infinityalgoacademy.net"
+                                    class="method-link">me@infinityalgoacademy.net</a>
+                                <p class="method-desc">We'll respond within 24 hours</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M3 5C3 3.89543 3.89543 3 5 3H8.27924C8.70967 3 9.09181 3.27543 9.22792 3.68377L10.7257 8.17721C10.8831 8.64932 10.6694 9.16531 10.2243 9.38787L7.96701 10.5165C9.06925 12.9612 11.0388 14.9308 13.4835 16.033L14.6121 13.7757C14.8347 13.3306 15.3507 13.1169 15.8228 13.2743L20.3162 14.7721C20.7246 14.9082 21 15.2903 21 15.7208V19C21 20.1046 20.1046 21 19 21H18C9.71573 21 3 14.2843 3 6V5Z"
+                                        stroke="url(#methodGrad2)" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <defs>
+                                        <linearGradient id="methodGrad2" x1="3" y1="3" x2="21" y2="21"
+                                            gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#10B981" />
+                                            <stop offset="1" stop-color="#059669" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="method-content">
+                                <h3 class="method-title">Phone</h3>
+                                <a href="tel:+213795975712" class="method-link">+213 795 97 57 12</a>
+                                <p class="method-desc">Available 24/7</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM16.64 13.96C16.49 14.07 16.32 14.12 16.16 14.12C15.93 14.12 15.7 14.02 15.54 13.82L13.38 11.1C13.17 10.84 13.06 10.51 13.06 10.18V6.5C13.06 5.95 13.51 5.5 14.06 5.5C14.61 5.5 15.06 5.95 15.06 6.5V10.18L17.22 12.9C17.53 13.28 17.47 13.84 16.64 13.96Z"
+                                        fill="url(#methodGrad3)" />
+                                    <defs>
+                                        <linearGradient id="methodGrad3" x1="2" y1="2" x2="22" y2="22"
+                                            gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#06B6D4" />
+                                            <stop offset="1" stop-color="#3B82F6" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="method-content">
+                                <h3 class="method-title">Telegram</h3>
+                                <a href="https://t.me/InfinityAlgo_Group_Topics" class="method-link"
+                                    target="_blank">Join our community</a>
+                                <p class="method-desc">Instant messaging support</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path
+                                        d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z"
+                                        stroke="url(#methodGrad4)" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z"
+                                        stroke="url(#methodGrad4)" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <defs>
+                                        <linearGradient id="methodGrad4" x1="3" y1="1" x2="21" y2="23"
+                                            gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#F59E0B" />
+                                            <stop offset="1" stop-color="#EF4444" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="method-content">
+                                <h3 class="method-title">Website</h3>
+                                <a href="https://infinityalgoacademy.net" class="method-link"
+                                    target="_blank">infinityalgoacademy.net</a>
+                                <p class="method-desc">Visit our main website</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-section">
+                        <h3 class="social-title">Follow Us</h3>
+                        <div class="social-links-large">
+                            <a href="https://t.me/InfinityAlgo_Group_Topics" class="social-link-large" target="_blank">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.14.18-.357.295-.6.295-.002 0-.003 0-.005 0l.213-3.054 5.56-5.022c.24-.213-.054-.334-.373-.121L7.94 13.983l-2.96-.924c-.64-.203-.658-.64.135-.954l11.566-4.458c.538-.196.994.12.82.954z" />
+                                </svg>
+                                <span>Telegram</span>
+                            </a>
+                            <a href="https://infinityalgoacademy.net/community" class="social-link-large"
+                                target="_blank">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 22c-5.514 0-10-4.486-10-10S6.486 2 12 2s10 4.486 10 10-4.486 10-10 10zm-2-16H8v10h2V6zm5 0h-2v10h2V6z" />
+                                </svg>
+                                <span>Community</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <span class="logo-icon">∞</span>
+                        <span class="logo-text">InfinityAlgo Academy</span>
+                    </div>
+                    <p class="footer-description">Professional trading tools and education for serious traders.</p>
+                    <div class="social-links">
+                        <a href="https://t.me/InfinityAlgo_Group_Topics" class="social-link" aria-label="Telegram">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path
+                                    d="M10 0C4.477 0 0 4.477 0 10s4.477 10 10 10 10-4.477 10-10S15.523 0 10 0zm4.92 6.56l-1.43 7.14c-.11.52-.39.65-.79.4l-2.18-1.61-1.05 1.01c-.12.12-.22.22-.44.22l.16-2.22 4.03-3.64c.18-.16-.04-.24-.27-.09L7.63 11.3l-2.15-.67c-.47-.15-.48-.47.1-.7l8.4-3.24c.39-.14.73.09.6.67z" />
+                            </svg>
+                        </a>
+                        <a href="https://infinityalgoacademy.net/community" class="social-link" aria-label="Community">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                <path
+                                    d="M10 0C4.477 0 0 4.477 0 10s4.477 10 10 10 10-4.477 10-10S15.523 0 10 0zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8zm-1-13H7v8h2V5zm4 0h-2v8h2V5z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-heading">Product</h4>
+                    <ul class="footer-links">
+                        <li><a href="product.html">Features</a></li>
+                        <li><a href="docs.html">Documentation</a></li>
+                        <li><a href="shop.html">Pricing</a></li>
+                        <li><a href="product.html#faq">FAQ</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="https://infinityalgoacademy.net/community">Community</a></li>
+                        <li><a href="https://infinityalgoacademy.net/shop">Shop</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4 class="footer-heading">Contact</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                <path
+                                    d="M2.5 3A1.5 1.5 0 001 4.5v.793c.026.009.051.02.076.032L7.674 8.51c.206.1.446.1.652 0l6.598-3.185A.755.755 0 0015 5.293V4.5A1.5 1.5 0 0013.5 3h-11z" />
+                                <path
+                                    d="M15 6.954L8.978 9.86a2.25 2.25 0 01-1.956 0L1 6.954V11.5A1.5 1.5 0 002.5 13h11a1.5 1.5 0 001.5-1.5V6.954z" />
+                            </svg>
+                            <a href="mailto:me@infinityalgoacademy.net">me@infinityalgoacademy.net</a>
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                <path
+                                    d="M3.654 1.328a.678.678 0 00-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 004.168 6.608 17.569 17.569 0 006.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 00-.063-1.015l-2.307-1.794a.678.678 0 00-.58-.122l-2.19.547a1.745 1.745 0 01-1.657-.459L5.482 8.062a1.745 1.745 0 01-.46-1.657l.548-2.19a.678.678 0 00-.122-.58L3.654 1.328z" />
+                            </svg>
+                            <a href="tel:+213795975712">+213 795 97 57 12</a>
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                                <path
+                                    d="M8 0a8 8 0 100 16A8 8 0 008 0zM5.78 8.58a.5.5 0 01-.706-.708L7.293 5.65a.5.5 0 01.708 0l2.22 2.22a.5.5 0 11-.708.708L8 7.061 6.487 8.574z" />
+                            </svg>
+                            <a href="https://infinityalgoacademy.net">infinityalgoacademy.net</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 InfinityAlgo Academy. All rights reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
