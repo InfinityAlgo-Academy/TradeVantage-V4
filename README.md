@@ -1,745 +1,352 @@
 <div align="center">
 
-# 🛡️ FTMO Protector PRO MT4
+# 🚀 Infinity Algo Academy
 
-### Advanced Expert Advisor for FTMO Challenge Protection
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=32&duration=2800&pause=2000&color=00D9FF&center=true&vCenter=true&width=940&lines=Welcome+to+Infinity+Algo+Academy;Professional+Trading+Tools+%26+Algorithms;AI-Powered+Trading+Solutions;Your+Gateway+to+Trading+Excellence" alt="Typing SVG" />
 
-[![License](https://img.shields.io/badge/license-Proprietary-blue.svg)](LICENSE)
-[![Version](https://img.shields.io/badge/version-2.0.0-green.svg)](https://github.com/InfinityAlgo-Academy/FTMO-Protector-PRO-MT4)
-[![Platform](https://img.shields.io/badge/platform-MT4-orange.svg)](https://www.metatrader4.com/)
-[![Language](https://img.shields.io/badge/language-Arabic-red.svg)](https://infinityalgo-academy.github.io/FTMO-Protector-PRO-MT4/)
+[![Website](https://img.shields.io/badge/🌐_Website-infinityalgoacademy.net-00D9FF?style=for-the-badge)](https://infinityalgoacademy.net)
+[![Community](https://img.shields.io/badge/👥_Community-Join_Now-FF6B6B?style=for-the-badge)](https://infinityalgoacademy.net/community)
+[![Shop](https://img.shields.io/badge/🛒_Shop-Browse_Products-4ECDC4?style=for-the-badge)](https://infinityalgoacademy.net/shop)
+[![Telegram](https://img.shields.io/badge/💬_Telegram-Join_Group-26A5E4?style=for-the-badge&logo=telegram)](https://t.me/InfinityAlgo_Group_Topics)
 
-[🌐 Live Demo](https://infinityalgo-academy.github.io/FTMO-Protector-PRO-MT4/) | [📚 Documentation](https://infinityalgo-academy.github.io/FTMO-Protector-PRO-MT4/#docs) | [📝 Articles](https://infinityalgo-academy.github.io/FTMO-Protector-PRO-MT4/#article) | [🛒 Purchase](https://infinityalgoacademy.net/item/ftmo-protector-pro-mt4/)
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="700">
 
 </div>
 
 ---
 
-## 📖 Table of Contents
+## 📊 About Us
 
-- [Overview](#-overview)
-- [Key Features](#-key-features)
-- [Why FTMO Protector PRO?](#-why-ftmo-protector-pro)
-- [How It Works](#-how-it-works)
-- [Technical Specifications](#-technical-specifications)
-- [Installation](#-installation)
-- [Configuration](#-configuration)
-- [Use Cases](#-use-cases)
-- [Success Stories](#-success-stories)
-- [Website Features](#-website-features)
-- [SEO Optimization](#-seo-optimization)
-- [Technologies Used](#-technologies-used)
-- [File Structure](#-file-structure)
-- [Browser Compatibility](#-browser-compatibility)
-- [Performance Metrics](#-performance-metrics)
-- [Contributing](#-contributing)
-- [Support](#-support)
-- [License](#-license)
+**Infinity Algo Academy** is your premier destination for professional trading tools, algorithms, and educational resources. We specialize in developing cutting-edge trading solutions for MetaTrader, NinjaTrader, and TradingView platforms.
+
+<div align="center">
+
+### 🎯 Our Mission
+*Empowering traders worldwide with industry-leading knowledge, tools, and AI-powered solutions*
+
+</div>
 
 ---
 
-## 🎯 Overview
+## 🌟 Featured Products
 
-**FTMO Protector PRO** is a cutting-edge Expert Advisor (EA) specifically designed to protect traders from violating FTMO challenge rules and similar prop trading firm regulations. With over **90% of traders failing** FTMO challenges due to rule violations, our EA provides an automated safety net that monitors your account 24/7 and automatically closes all positions when approaching critical limits.
+<table>
+<tr>
+<td width="50%">
 
-### The Problem We Solve
+### 🤖 AI & Automation
+- **Mad Turtle AI** - Advanced AI Trading System
+- **Expert Quantum Queen MT5** - Intelligent EA
+- **AW Recovery EA** - Smart Recovery System
+- **Advanced Gold Trading EA** - Specialized Gold Bot
 
-- **60%** of traders fail by violating daily drawdown limits
-- **25%** fail due to poor risk management
-- **10%** fail due to greed and overtrading
-- **5%** fail due to other technical issues
+</td>
+<td width="50%">
 
-**FTMO Protector PRO** eliminates these risks through intelligent automation.
+### 📈 Indicators & Tools
+- **FTMO Protector PRO** - Risk Management
+- **Footprint Price Action Pro** - Market Microstructure
+- **DeepTest Indicator** - Advanced Analytics
+- **ACD Indicator MT5** - Price Action Tool
 
----
-
-## ✨ Key Features
-
-### 🔍 Real-Time Monitoring
-- **24/7 Account Surveillance**: Monitors equity and balance every tick
-- **Precision Calculations**: 100% accurate daily balance tracking
-- **Multi-Timeframe Support**: Works on all timeframes and currency pairs
-- **Zero Latency**: Instant response to market changes
-
-### ⚡ Automatic Protection
-- **Smart Auto-Close**: Automatically closes all positions when limits are reached
-- **Slippage Control**: Configurable slippage tolerance for order execution
-- **Emergency Stop**: Immediate account protection in critical situations
-- **Chart Closure Option**: Can close all charts for maximum safety
-
-### 📊 Visual Dashboard
-- **Live Statistics Panel**: Real-time display of all critical metrics
-- **Color-Coded Alerts**: Visual warnings when approaching limits
-- **Profit/Loss Tracking**: Daily and total P&L monitoring
-- **Limit Indicators**: Clear visualization of remaining buffer
-
-### 🎯 Customizable Settings
-- **Flexible Limits**: Configure daily drawdown, max loss, and profit targets
-- **Time Zone Support**: Automatic adjustment for broker server time
-- **Reset Hour Configuration**: Set custom daily reset times
-- **Multi-Account Support**: Works with any account size
-
-### 🔔 Alert System
-- **Sound Notifications**: Audio alerts for important events
-- **Visual Warnings**: On-chart notifications
-- **Email Alerts** (Optional): Get notified remotely
-- **Mobile Push** (Optional): Stay informed on the go
+</td>
+</tr>
+</table>
 
 ---
 
-## 🚀 Why FTMO Protector PRO?
+## 📚 Repository Showcase
 
-### The Statistics Don't Lie
+<div align="center">
 
-| Challenge Phase | Success Rate | Main Failure Reason |
-|----------------|--------------|---------------------|
-| Phase 1 (10% target) | **8-12%** | Daily drawdown violation (60%) |
-| Phase 2 (5% target) | **15-20%** | Poor risk management (25%) |
-| Funded Account | **30-40%** | Emotional trading (10%) |
+### 🔥 Premium Trading Tools
 
-### Our Solution
+</div>
 
-```
-Traditional Trading          →  90% Failure Rate
-+
-FTMO Protector PRO          →  Automated Protection
-=
-Significantly Higher Success Rate
-```
+| Repository | Description | Stars |
+|------------|-------------|-------|
+| [🛡️ FTMO-Protector-PRO-MT4](https://github.com/InfinityAlgo-Academy/FTMO-Protector-PRO-MT4) | Professional risk management tool for FTMO challenges | ⭐ |
+| [📊 Footprint-Price-Action-Pro](https://github.com/InfinityAlgo-Academy/Footprint-Price-Action-Pro) | Advanced market microstructure analysis for NinjaTrader | ⭐⭐⭐⭐ |
+| [🐢 Mad-Turtle-AI](https://github.com/InfinityAlgo-Academy/Mad-Turtle-AI) | AI-powered trading system with machine learning | ⭐⭐⭐ |
+| [🏠 InfinityAlgo Academy Website](https://github.com/InfinityAlgo-Academy/home) | Official academy website repository | ⭐⭐⭐ |
+| [📦 Complete Trading Products Library 2026](https://github.com/InfinityAlgo-Academy/Infinity-Algo-Academy-Complete-Trading-Products-Library-2026-Edition-) | Comprehensive collection of all trading tools | ⭐⭐⭐⭐⭐ |
+| [⚡ Expert-Quantum-Queen-MT5](https://github.com/InfinityAlgo-Academy/Expert-Quantum-Queen-MT5-v2.6) | Advanced quantum-based trading expert advisor | ⭐⭐⭐⭐ |
+| [🔄 AW-Recovery-EA-MT](https://github.com/InfinityAlgo-Academy/AW-Recovery-EA-MT) | Intelligent recovery expert advisor | ⭐⭐⭐⭐ |
+| [🥇 Advanced-Gold-Trading-EA](https://github.com/InfinityAlgo-Academy/Advanced-Gold-Trading-V6.4-EA-MT4-) | Specialized gold trading algorithm v6.4 | ⭐⭐⭐⭐ |
 
-### What Makes Us Different?
+<div align="center">
 
-| Feature | FTMO Protector PRO | Manual Monitoring | Other EAs |
-|---------|-------------------|-------------------|-----------|
-| 24/7 Monitoring | ✅ | ❌ | ⚠️ |
-| Instant Response | ✅ | ❌ | ⚠️ |
-| 100% Accuracy | ✅ | ❌ | ❌ |
-| Visual Dashboard | ✅ | ❌ | ⚠️ |
-| Easy Configuration | ✅ | N/A | ❌ |
-| Multi-Account Support | ✅ | ✅ | ⚠️ |
-| Arabic Interface | ✅ | N/A | ❌ |
-| Dedicated Support | ✅ | N/A | ⚠️ |
+### 🎨 NinjaTrader Indicators
+
+</div>
+
+| Repository | Description | Stars |
+|------------|-------------|-------|
+| [📊 Footprint-Price-Action-Pro-NinjaTrader](https://github.com/InfinityAlgo-Academy/Footprint-Price-Action-Pro-Indicator-for-NinjaTrader) | Professional footprint analysis tool | ⭐⭐⭐⭐ |
+| [💹 Footprint-Orderflow-NinjaTrader](https://github.com/InfinityAlgo-Academy/Footprint-Orderflow-Indicator-for-NinjaTrader) | Advanced order flow analysis | ⭐⭐⭐⭐ |
+
+<div align="center">
+
+### 📈 TradingView & MetaTrader
+
+</div>
+
+| Repository | Description | Stars |
+|------------|-------------|-------|
+| [🔬 DeepTest-TradingView](https://github.com/InfinityAlgo-Academy/DeepTest-TradingView-Indicator-Free-Download) | Advanced backtesting indicator - Free Download | ⭐⭐⭐ |
+| [🔍 Arbitrage-Detector-LuxAlgo](https://github.com/InfinityAlgo-Academy/Arbitrage-Detector-LuxAlgo-Free-Download) | LuxAlgo arbitrage detection tool - Free | ⭐⭐⭐ |
+| [📊 ACD-Indicator-MT5](https://github.com/InfinityAlgo-Academy/ACD-Indicator-for-MetaTrader-5) | Advanced price action indicator for MT5 | ⭐⭐⭐ |
+| [📊 ACD-Indicator-MT5-Enhanced](https://github.com/InfinityAlgo-Academy/ACD-Indicator-for-MetaTrader-5-) | Enhanced version with additional features | ⭐⭐⭐⭐ |
+
+<div align="center">
+
+### 🛠️ Development & Tools
+
+</div>
+
+| Repository | Description | Stars |
+|------------|-------------|-------|
+| [📚 Complete-Professional-Trading-Tools](https://github.com/InfinityAlgo-Academy/Complete-Professional-Trading-Tools-Algorithms-Library) | Professional algorithms library | ⭐⭐⭐⭐ |
+| [⚡ BoltNew](https://github.com/InfinityAlgo-Academy/BoltNew) | Modern development framework | ⭐⭐⭐⭐ |
+| [🌐 InfinityAlgoV3](https://github.com/InfinityAlgo-Academy/InfinityAlgoV3) | Latest version of core algorithm | ⭐⭐⭐⭐⭐ |
+| [🔧 n8n](https://github.com/InfinityAlgo-Academy/n8n) | Workflow automation platform | ⭐⭐⭐⭐ |
+
+<div align="center">
+
+### 🤖 AI & Automation Tools
+
+</div>
+
+| Repository | Description | Stars |
+|------------|-------------|-------|
+| [🌐 InfinityDomainOracle](https://github.com/InfinityAlgo-Academy/InfinityDomainOracle) | منصة استخباراتية متقدمة لتحليل الدومينات بالذكاء الاصطناعي | ⭐⭐⭐⭐ |
+| [✍️ AI-Writy](https://github.com/InfinityAlgo-Academy/AI-Writy) | AI-Powered content creation & digital marketing | ⭐⭐⭐⭐ |
+| [🔍 awesome-seo-tools](https://github.com/InfinityAlgo-Academy/awesome-seo-tools) | Curated list of awesome SEO tools | ⭐⭐⭐⭐ |
+| [🎯 CL4R1T4S](https://github.com/InfinityAlgo-Academy/CL4R1T4S) | AI systems transparency & leaked prompts | ⭐⭐⭐⭐ |
+| [💻 cursor-pro-free](https://github.com/InfinityAlgo-Academy/cursor-pro-free) | Free Cursor Pro features | ⭐⭐⭐⭐⭐ |
+| [⚡ cursor-free-vip](https://github.com/InfinityAlgo-Academy/cursor-free-vip) | VIP Cursor features unlocked | ⭐⭐⭐ |
+
+<div align="center">
+
+### 📖 Resources & Documentation
+
+</div>
+
+| Repository | Description | Stars |
+|------------|-------------|-------|
+| [🔫 king-arius-gun-relay](https://github.com/InfinityAlgo-Academy/king-arius-gun-relay) | Gun relay system implementation | ⭐⭐⭐⭐ |
+| [📝 claude-code-templates](https://github.com/InfinityAlgo-Academy/claude-code-templates-tab-readme-ov-file) | Claude AI code templates collection | ⭐⭐⭐⭐ |
+| [🎨 gpt4o-image-prompts](https://github.com/InfinityAlgo-Academy/gpt4o-image-prompts) | GPT-4o image generation prompts | ⭐⭐⭐⭐ |
+| [💾 dexie-website](https://github.com/InfinityAlgo-Academy/dexie-website) | Dexie.js website resources | ⭐⭐⭐⭐ |
+| [👥 fluent-community](https://github.com/InfinityAlgo-Academy/fluent-community) | Community management platform | ⭐⭐⭐⭐ |
+| [📚 fluent-community-docs](https://github.com/InfinityAlgo-Academy/luent-community-docs) | Community documentation | ⭐⭐⭐⭐ |
 
 ---
 
-## 🔧 How It Works
+## 🎓 What We Offer
 
-### The Protection Algorithm
+<div align="center">
 
 ```mermaid
-graph TD
-    A[EA Starts] --> B[Load Configuration]
-    B --> C[Calculate Daily Starting Balance]
-    C --> D[Monitor Every Tick]
-    D --> E{Check Limits}
-    E -->|Within Limits| D
-    E -->|Approaching Limit| F[Visual Warning]
-    F --> D
-    E -->|Limit Reached| G[Close All Positions]
-    G --> H[Display Alert]
-    H --> I[Stop Trading]
-    D --> J{New Day?}
-    J -->|Yes| C
-    J -->|No| D
+graph LR
+    A[🎯 Trading Education] --> B[📊 Professional Tools]
+    B --> C[🤖 AI Solutions]
+    C --> D[👥 Community Support]
+    D --> E[🚀 Success]
+    
+    style A fill:#00D9FF,stroke:#0099CC,stroke-width:2px,color:#000
+    style B fill:#FF6B6B,stroke:#CC5555,stroke-width:2px,color:#000
+    style C fill:#4ECDC4,stroke:#3DA39D,stroke-width:2px,color:#000
+    style D fill:#FFE66D,stroke:#CDB856,stroke-width:2px,color:#000
+    style E fill:#95E1D3,stroke:#77B4A9,stroke-width:2px,color:#000
 ```
 
-### Step-by-Step Process
+</div>
 
-1. **Initialization**
-   - EA loads your configuration settings
-   - Calculates initial balance and limits
-   - Displays visual dashboard on chart
+<table>
+<tr>
+<td width="33%" align="center">
 
-2. **Continuous Monitoring**
-   - Monitors equity with every price tick
-   - Compares current equity against limits
-   - Updates visual dashboard in real-time
+### 📚 Education
+Comprehensive trading courses and tutorials for all skill levels
 
-3. **Limit Detection**
-   - **Green Zone**: Safe trading (>10% buffer)
-   - **Yellow Zone**: Caution (5-10% buffer)
-   - **Red Zone**: Danger (<5% buffer)
-   - **Critical**: Limit reached → Auto-close
+</td>
+<td width="33%" align="center">
 
-4. **Automatic Protection**
-   - Closes all open positions instantly
-   - Displays alert notification
-   - Prevents new trades (optional)
-   - Logs event for review
+### 🛠️ Tools
+Professional-grade indicators, EAs, and trading systems
 
-5. **Daily Reset**
-   - Automatically resets at configured hour
-   - Recalculates daily starting balance
-   - Updates all limits accordingly
+</td>
+<td width="33%" align="center">
+
+### 🤝 Support
+Active community and dedicated customer support
+
+</td>
+</tr>
+</table>
 
 ---
 
-## 📋 Technical Specifications
+## 📞 Contact Information
 
-### System Requirements
+<div align="center">
 
-- **Platform**: MetaTrader 4 (MT4)
-- **Operating System**: Windows 7/8/10/11, macOS (via Wine), Linux (via Wine)
-- **RAM**: Minimum 2GB (4GB recommended)
-- **Processor**: Any modern CPU
-- **Internet**: Stable connection required
-- **VPS**: Recommended for 24/7 operation
+### 💬 Get In Touch
 
-### Supported Brokers
+<table>
+<tr>
+<td align="center">
 
-- ✅ FTMO
-- ✅ MyForexFunds (MFF)
-- ✅ The5%ers
-- ✅ FundedNext
-- ✅ E8 Funding
-- ✅ FXIFY
-- ✅ Any prop trading firm with similar rules
+**🌐 Website**  
+[infinityalgoacademy.net](https://infinityalgoacademy.net)
 
-### Compatible Account Types
+</td>
+<td align="center">
 
-- Standard Accounts
-- ECN Accounts
-- Micro Accounts
-- Cent Accounts
-- Demo Accounts (for testing)
+**👥 Community**  
+[Join Our Community](https://infinityalgoacademy.net/community)
 
----
+</td>
+<td align="center">
 
-## 💻 Installation
+**🛒 Shop**  
+[Browse Products](https://infinityalgoacademy.net/shop)
 
-### Quick Start Guide
+</td>
+</tr>
+<tr>
+<td align="center">
 
-1. **Download the EA**
-   ```
-   Purchase from: https://infinityalgoacademy.net/item/ftmo-protector-pro-mt4/
-   ```
+**💬 Telegram**  
+[@InfinityAlgo_Group_Topics](https://t.me/InfinityAlgo_Group_Topics)
 
-2. **Install in MT4**
-   ```
-   Copy .ex4 file to: MT4/MQL4/Experts/
-   Restart MT4
-   ```
+</td>
+<td align="center">
 
-3. **Attach to Chart**
-   ```
-   Open any chart → Drag EA from Navigator → Configure settings → Click OK
-   ```
+**📱 Contact**  
+[@King_arius_dz](https://t.me/King_arius_dz)
 
-4. **Verify Installation**
-   ```
-   Check for visual dashboard on chart
-   Verify "AutoTrading" is enabled
-   Confirm EA is running (smiley face icon)
-   ```
+</td>
+<td align="center">
 
-### Detailed Installation Steps
+**📧 Email**  
+[me@infinityalgoacademy.net](mailto:me@infinityalgoacademy.net)
 
-For comprehensive installation instructions, visit our [Documentation Page](https://infinityalgo-academy.github.io/FTMO-Protector-PRO-MT4/#docs).
+</td>
+</tr>
+<tr>
+<td colspan="3" align="center">
+
+**📞 Phone**  
+[+213 795 97 57 12](tel:+213795975712)
+
+</td>
+</tr>
+</table>
+
+</div>
 
 ---
 
-## ⚙️ Configuration
+## 📊 GitHub Statistics
 
-### Essential Settings
+<div align="center">
 
-#### For $10,000 FTMO Challenge
+<img src="https://github-readme-stats.vercel.app/api?username=InfinityAlgo-Academy&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00D9FF&icon_color=00D9FF&text_color=FFFFFF" alt="GitHub Stats" width="48%" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=InfinityAlgo-Academy&theme=tokyonight&hide_border=true&background=0D1117&stroke=00D9FF&ring=00D9FF&fire=FF6B6B&currStreakLabel=00D9FF" alt="GitHub Streak" width="48%" />
 
-```
-Target Equity: 11000          // $10,000 + $1,000 profit target
-Daily Drawdown Limit: -500    // 5% of $10,000
-Max Drawdown: -1000           // 10% of $10,000
-Daily Profit Target: 200      // 2% daily target (optional)
-Reset Hour: 1                 // 1:00 AM broker time
-Slippage: 10                  // 10 points tolerance
-Close All Charts: true        // Maximum protection
-```
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=InfinityAlgo-Academy&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00D9FF&text_color=FFFFFF" alt="Top Languages" width="48%" />
 
-#### For $100,000 FTMO Challenge
-
-```
-Target Equity: 110000         // $100,000 + $10,000 profit target
-Daily Drawdown Limit: -5000   // 5% of $100,000
-Max Drawdown: -10000          // 10% of $100,000
-Daily Profit Target: 2000     // 2% daily target (optional)
-Reset Hour: 1                 // 1:00 AM broker time
-Slippage: 10                  // 10 points tolerance
-Close All Charts: true        // Maximum protection
-```
-
-### Advanced Configuration
-
-For advanced settings and customization options, refer to our [Complete Documentation](https://infinityalgo-academy.github.io/FTMO-Protector-PRO-MT4/#docs).
+</div>
 
 ---
 
-## 💡 Use Cases
+## 🏆 Our Achievements
 
-### Scenario 1: Daily Drawdown Protection
+<div align="center">
 
-**Situation**: Trader has $10,000 account, loses $300 in morning session, continues trading.
+![](https://img.shields.io/badge/Trading_Tools-30+-00D9FF?style=for-the-badge&logo=github)
+![](https://img.shields.io/badge/Active_Users-1000+-FF6B6B?style=for-the-badge&logo=users)
+![](https://img.shields.io/badge/GitHub_Stars-100+-4ECDC4?style=for-the-badge&logo=star)
+![](https://img.shields.io/badge/Countries-50+-FFE66D?style=for-the-badge&logo=world)
 
-**Without EA**: 
-- Trader doesn't notice equity drop
-- Opens more positions to "recover"
-- Loses another $250
-- **Result**: Violates daily limit ($550 > $500) → Challenge Failed ❌
-
-**With EA**:
-- EA monitors equity continuously
-- At $9,700 equity → Closes all positions automatically
-- **Result**: Daily limit protected ($300 < $500) → Challenge Continues ✅
-
-### Scenario 2: Emotional Trading Prevention
-
-**Situation**: Trader has profitable day (+$400), gets greedy, increases lot sizes.
-
-**Without EA**:
-- Trader opens large positions
-- Market reverses
-- Loses $600 in one trade
-- **Result**: Violates daily limit → Challenge Failed ❌
-
-**With EA**:
-- EA would have closed positions at -$500
-- Protects against emotional decisions
-- **Result**: Account protected → Challenge Continues ✅
-
-### Scenario 3: Overnight Gap Protection
-
-**Situation**: Trader holds positions overnight, major news causes gap.
-
-**Without EA**:
-- Gap causes instant $800 loss
-- **Result**: Violates daily limit → Challenge Failed ❌
-
-**With EA**:
-- EA monitors even during gaps
-- Closes positions immediately when limit reached
-- **Result**: Minimizes damage → Account protected ✅
+</div>
 
 ---
 
-## 🏆 Success Stories
+## 🌐 Platforms We Support
 
-### Case Study: Mohammed from Saudi Arabia
+<div align="center">
 
-**Background**:
-- Failed FTMO challenge 3 times
-- Lost $465 in fees (3 × $155)
-- Main issue: Daily drawdown violations
+| Platform | Tools Available | Status |
+|----------|----------------|--------|
+| 📊 **MetaTrader 4** | Expert Advisors, Indicators | ✅ Active |
+| 📈 **MetaTrader 5** | Expert Advisors, Indicators | ✅ Active |
+| 🎯 **NinjaTrader** | Indicators, Strategies | ✅ Active |
+| 📉 **TradingView** | Pine Script Indicators | ✅ Active |
+| 🤖 **AI Solutions** | Custom Algorithms | ✅ Active |
 
-**With FTMO Protector PRO**:
-- ✅ Day 6: EA closed positions at -$300 (saved from -$500+ loss)
-- ✅ Day 13: Reached 10% profit target
-- ✅ Passed Phase 1 on 4th attempt
-- ✅ Now trading funded $10,000 account
-- ✅ Monthly profit: $2,000-3,000
-
-**Quote**: *"FTMO Protector PRO saved my account 4 times during the challenge. Without it, I would have failed again. Now I trade with complete peace of mind."*
+</div>
 
 ---
 
-## 🌐 Website Features
+## 💎 Why Choose Infinity Algo Academy?
 
-Our comprehensive website includes:
+<div align="center">
 
-### Pages
+| Feature | Description |
+|---------|-------------|
+| ✅ **Professional Quality** | Industry-leading tools developed by expert traders |
+| ✅ **Continuous Updates** | Regular updates and improvements to all products |
+| ✅ **24/7 Support** | Dedicated support team ready to help |
+| ✅ **Active Community** | Join thousands of successful traders |
+| ✅ **Educational Resources** | Comprehensive learning materials |
+| ✅ **Affordable Pricing** | Premium quality at competitive prices |
 
-1. **🏠 Home** - Product overview and key features
-2. **✨ Features** - Detailed feature breakdown
-3. **👥 About Us** - Team and company information
-4. **📚 Documentation** - Complete user guide (~3,500 words)
-5. **📝 Articles** - Educational content about FTMO challenges (~2,500 words)
-6. **📧 Contact** - Support and contact information
-7. **🔒 Privacy Policy** - Data protection and privacy
-
-### Content Highlights
-
-- **6,000+ words** of detailed content
-- **12+ sections** of comprehensive documentation
-- **Real-world examples** and scenarios
-- **Step-by-step guides** for all account sizes
-- **Troubleshooting** for common issues
-- **Success stories** from real users
-- **FAQ section** with 15+ questions
-
-### Design Features
-
-- ✅ Modern dark theme design
-- ✅ Fully responsive (mobile, tablet, desktop)
-- ✅ Interactive navigation with icons
-- ✅ Smooth animations and transitions
-- ✅ Professional color scheme
-- ✅ Arabic language (RTL support)
-- ✅ Fast loading times
-- ✅ SEO optimized
+</div>
 
 ---
 
-## 🔍 SEO Optimization
+## 🚀 Quick Links
 
-### On-Page SEO
+<div align="center">
 
-- ✅ **Meta Tags**: Comprehensive title, description, and keywords
-- ✅ **Open Graph**: Social media sharing optimization
-- ✅ **Semantic HTML**: Proper heading hierarchy (H1-H6)
-- ✅ **Alt Tags**: All images have descriptive alt text
-- ✅ **Internal Linking**: Strategic cross-page linking
-- ✅ **URL Structure**: Clean and descriptive URLs
-- ✅ **Mobile-First**: Responsive design for all devices
+[![Explore Products](https://img.shields.io/badge/🛒_Explore_Products-Visit_Shop-4ECDC4?style=for-the-badge)](https://infinityalgoacademy.net/shop)
+[![Join Community](https://img.shields.io/badge/👥_Join_Community-Get_Started-FF6B6B?style=for-the-badge)](https://infinityalgoacademy.net/community)
+[![Learn More](https://img.shields.io/badge/📚_Learn_More-Visit_Website-00D9FF?style=for-the-badge)](https://infinityalgoacademy.net)
+[![Contact Us](https://img.shields.io/badge/📧_Contact_Us-Get_Support-FFE66D?style=for-the-badge)](mailto:me@infinityalgoacademy.net)
 
-### Technical SEO
-
-- ✅ **robots.txt**: Proper crawling instructions
-- ✅ **sitemap.xml**: Complete site structure
-- ✅ **Page Speed**: Optimized loading times
-- ✅ **HTTPS**: Secure connection (via GitHub Pages)
-- ✅ **Structured Data**: Schema markup for rich snippets
-- ✅ **Canonical URLs**: Prevent duplicate content
-
-### Content SEO
-
-- ✅ **Keyword Optimization**: Strategic keyword placement
-- ✅ **Long-Form Content**: 6,000+ words of valuable content
-- ✅ **Topic Clusters**: Related content organization
-- ✅ **Fresh Content**: Regular updates and additions
-- ✅ **User Intent**: Content matches search queries
-- ✅ **Readability**: Clear and engaging writing
-
-### Target Keywords
-
-**Primary Keywords**:
-- FTMO Protector
-- FTMO Challenge Protection
-- FTMO EA
-- Prop Trading Protection
-- FTMO Rules Protector
-
-**Secondary Keywords**:
-- FTMO daily drawdown protection
-- FTMO challenge EA
-- Automated FTMO protection
-- FTMO account protector
-- Prop firm challenge EA
-
-**Long-Tail Keywords**:
-- How to pass FTMO challenge
-- FTMO challenge protection software
-- Automated FTMO risk management
-- FTMO daily loss limit protection
-- Best EA for FTMO challenge
+</div>
 
 ---
 
-## 🛠️ Technologies Used
+## 📜 License & Terms
 
-### Frontend
+<div align="center">
 
-- **HTML5**: Semantic markup and structure
-- **CSS3**: Modern styling with CSS variables
-  - Flexbox and Grid layouts
-  - Custom animations
-  - Responsive design
-  - Dark theme implementation
-- **JavaScript**: Vanilla JS for interactions
-  - Page navigation
-  - Mobile menu toggle
-  - Smooth scrolling
-  - FAQ accordion
+All products and tools are protected by copyright and licensed for use according to our terms of service.  
+Please visit our [website](https://infinityalgoacademy.net) for detailed licensing information.
 
-### Fonts & Icons
-
-- **Google Fonts**: Cairo (Arabic-optimized)
-- **Emoji Icons**: Native emoji for visual elements
-
-### Hosting & Deployment
-
-- **GitHub Pages**: Free, fast, and reliable hosting
-- **Git**: Version control and collaboration
-- **Custom Domain**: Support for custom domains
-
-### Performance Optimization
-
-- **Separated Files**: CSS and JS in external files
-- **Minification**: Optimized file sizes
-- **Lazy Loading**: Images load on demand
-- **Caching**: Browser caching enabled
-- **CDN**: Content delivery via GitHub's CDN
-
----
-
-## 📁 File Structure
-
-```
-FTMO-Protector-PRO-MT4/
-│
-├── index.html                      # Main website file
-├── ftmo-protector-styles.css       # Stylesheet
-├── ftmo-protector-scripts.js       # JavaScript functionality
-│
-├── README.md                       # This file (English)
-├── README-IMPROVEMENTS.md          # Improvements documentation (Arabic)
-├── COMPARISON.md                   # Before/After comparison (Arabic)
-├── DETAILED-CONTENT-README.md      # Content guide (Arabic)
-│
-├── article-detailed.md             # Educational article (~2,500 words)
-├── documentation-detailed.md       # User documentation (~3,500 words)
-│
-├── robots.txt                      # Search engine crawling rules
-├── sitemap.xml                     # Site structure for search engines
-│
-└── assets/                         # Images and media (if any)
-    └── images/
-```
-
-### File Descriptions
-
-| File | Purpose | Size | Language |
-|------|---------|------|----------|
-| `index.html` | Main website | ~80KB | Arabic |
-| `ftmo-protector-styles.css` | Styles | ~20KB | CSS |
-| `ftmo-protector-scripts.js` | Functionality | ~3KB | JavaScript |
-| `article-detailed.md` | Educational content | ~15KB | Arabic |
-| `documentation-detailed.md` | User guide | ~25KB | Arabic |
-| `README.md` | Project documentation | ~30KB | English |
-| `robots.txt` | SEO crawling rules | ~1KB | Text |
-| `sitemap.xml` | Site structure | ~2KB | XML |
-
----
-
-## 🌍 Browser Compatibility
-
-### Desktop Browsers
-
-| Browser | Version | Support |
-|---------|---------|---------|
-| Chrome | 90+ | ✅ Full |
-| Firefox | 88+ | ✅ Full |
-| Safari | 14+ | ✅ Full |
-| Edge | 90+ | ✅ Full |
-| Opera | 76+ | ✅ Full |
-
-### Mobile Browsers
-
-| Browser | Platform | Support |
-|---------|----------|---------|
-| Chrome Mobile | Android | ✅ Full |
-| Safari Mobile | iOS | ✅ Full |
-| Firefox Mobile | Android | ✅ Full |
-| Samsung Internet | Android | ✅ Full |
-
-### Screen Sizes
-
-- ✅ **Desktop**: 1920px and above
-- ✅ **Laptop**: 1366px - 1919px
-- ✅ **Tablet**: 768px - 1365px
-- ✅ **Mobile**: 320px - 767px
-
----
-
-## 📊 Performance Metrics
-
-### Page Speed
-
-- **First Contentful Paint**: < 1.5s
-- **Largest Contentful Paint**: < 2.5s
-- **Time to Interactive**: < 3.5s
-- **Total Blocking Time**: < 300ms
-- **Cumulative Layout Shift**: < 0.1
-
-### Lighthouse Scores
-
-- **Performance**: 95+
-- **Accessibility**: 100
-- **Best Practices**: 100
-- **SEO**: 100
-
-### Loading Times
-
-| Connection | Load Time |
-|------------|-----------|
-| 4G | < 2 seconds |
-| 3G | < 4 seconds |
-| Slow 3G | < 8 seconds |
-
----
-
-## 🤝 Contributing
-
-We welcome contributions to improve the website and documentation!
-
-### How to Contribute
-
-1. **Fork the repository**
-   ```bash
-   git clone https://github.com/InfinityAlgo-Academy/FTMO-Protector-PRO-MT4.git
-   ```
-
-2. **Create a feature branch**
-   ```bash
-   git checkout -b feature/your-feature-name
-   ```
-
-3. **Make your changes**
-   - Improve documentation
-   - Fix bugs
-   - Add new features
-   - Enhance design
-
-4. **Commit your changes**
-   ```bash
-   git commit -m "Add: your feature description"
-   ```
-
-5. **Push to your fork**
-   ```bash
-   git push origin feature/your-feature-name
-   ```
-
-6. **Create a Pull Request**
-   - Describe your changes
-   - Reference any related issues
-   - Wait for review
-
-### Contribution Guidelines
-
-- Follow existing code style
-- Test on multiple browsers
-- Update documentation
-- Keep commits atomic and descriptive
-- Be respectful and professional
-
----
-
-## 📞 Support
-
-### Get Help
-
-- **📧 Email**: support@infinityalgoacademy.net
-- **💬 Telegram**: [@InfinityAlgoAcademy](https://t.me/InfinityAlgoAcademy)
-- **📱 WhatsApp**: +1234567890
-- **🌐 Website**: [InfinityAlgo Academy](https://infinityalgoacademy.net)
-
-### Support Hours
-
-- **Monday - Friday**: 9:00 AM - 6:00 PM (GMT+3)
-- **Saturday**: 10:00 AM - 4:00 PM (GMT+3)
-- **Sunday**: Closed
-
-### Response Time
-
-- **Email**: Within 24 hours
-- **Telegram**: Within 2-4 hours
-- **WhatsApp**: Within 1-2 hours (business hours)
-
-### Documentation
-
-- **User Guide**: [Documentation Page](https://infinityalgo-academy.github.io/FTMO-Protector-PRO-MT4/#docs)
-- **FAQ**: [Frequently Asked Questions](https://infinityalgo-academy.github.io/FTMO-Protector-PRO-MT4/#faq)
-- **Video Tutorials**: Coming soon
-- **Knowledge Base**: Coming soon
-
----
-
-## 📄 License
-
-**Proprietary License** - All Rights Reserved
-
-Copyright © 2024 InfinityAlgo Academy
-
-This software and website are proprietary products of InfinityAlgo Academy. Unauthorized copying, distribution, modification, or use of this software or website content is strictly prohibited.
-
-### Terms of Use
-
-- ✅ Personal use after purchase
-- ✅ Use on unlimited personal accounts
-- ❌ Redistribution or resale
-- ❌ Reverse engineering
-- ❌ Modification or derivative works
-- ❌ Commercial use without license
-
-For licensing inquiries, contact: licensing@infinityalgoacademy.net
-
----
-
-## 🎯 Roadmap
-
-### Version 2.1 (Coming Soon)
-
-- [ ] Multi-language support (English, Spanish, French)
-- [ ] Advanced statistics dashboard
-- [ ] Trade journal integration
-- [ ] Mobile app companion
-- [ ] Cloud-based settings sync
-
-### Version 3.0 (Future)
-
-- [ ] AI-powered risk prediction
-- [ ] Social trading features
-- [ ] Performance analytics
-- [ ] Automated strategy optimization
-- [ ] Multi-platform support (MT5, cTrader)
-
----
-
-## 🌟 Why Choose Us?
-
-### Our Commitment
-
-1. **Quality**: Premium product with attention to detail
-2. **Support**: Dedicated customer support team
-3. **Updates**: Regular updates and improvements
-4. **Community**: Active user community
-5. **Education**: Comprehensive learning resources
-
-### Our Values
-
-- **Transparency**: Clear pricing and honest marketing
-- **Innovation**: Continuous improvement and innovation
-- **Customer Success**: Your success is our success
-- **Integrity**: Ethical business practices
-- **Excellence**: Striving for perfection
-
----
-
-## 📈 Statistics
-
-### Product Stats
-
-- **Users**: 500+ active traders
-- **Success Rate**: 3x higher than industry average
-- **Accounts Protected**: 1,000+ challenges
-- **Money Saved**: $50,000+ in failed challenge fees
-- **Customer Satisfaction**: 4.9/5 stars
-
-### Website Stats
-
-- **Total Content**: 6,000+ words
-- **Pages**: 7 main sections
-- **Languages**: Arabic (English coming soon)
-- **Monthly Visitors**: Growing
-- **Conversion Rate**: Optimized
+</div>
 
 ---
 
 <div align="center">
 
-## 🚀 Ready to Protect Your FTMO Challenge?
+### 🌟 Star Our Repositories!
 
-### Don't be part of the 90% who fail!
+If you find our tools helpful, please consider giving us a ⭐ on GitHub!
 
-[![Purchase Now](https://img.shields.io/badge/Purchase-FTMO%20Protector%20PRO-00d4aa?style=for-the-badge&logo=shopping-cart)](https://infinityalgoacademy.net/item/ftmo-protector-pro-mt4/)
-[![Live Demo](https://img.shields.io/badge/View-Live%20Demo-1a1f2e?style=for-the-badge&logo=google-chrome)](https://infinityalgo-academy.github.io/FTMO-Protector-PRO-MT4/)
-[![Documentation](https://img.shields.io/badge/Read-Documentation-ff6b6b?style=for-the-badge&logo=read-the-docs)](https://infinityalgo-academy.github.io/FTMO-Protector-PRO-MT4/#docs)
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="700">
 
 ---
 
-### Made with ❤️ by [InfinityAlgo Academy](https://infinityalgoacademy.net)
+**© 2026 Infinity Algo Academy. All Rights Reserved.**
 
-**Empowering Traders Worldwide** 🌍
+*Empowering Traders Worldwide* 🚀
 
----
-
-*Last Updated: January 2024*
+[![Made with ❤️](https://img.shields.io/badge/Made_with-❤️-FF6B6B?style=for-the-badge)](https://infinityalgoacademy.net)
+[![Powered by AI](https://img.shields.io/badge/Powered_by-AI-00D9FF?style=for-the-badge)](https://infinityalgoacademy.net)
 
 </div>
