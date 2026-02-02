@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا | InfinityAlgo Academy</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <style>
+        .contact-hero {
+            padding-top: 200px;
+            padding-bottom: 60px;
+            text-align: center;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            padding: 80px 0;
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+        }
+
+        .contact-item {
+            background: var(--bg-card);
+            border: 1px solid var(--border-light);
+            padding: 32px;
+            border-radius: 24px;
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        .contact-item:hover {
+            border-color: var(--accent);
+            transform: scale(1.02);
+        }
+
+        .contact-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--accent-glow);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: var(--accent);
+        }
+
+        .form-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-light);
+            padding: 48px;
+            border-radius: 32px;
+        }
+
+        .input-group {
+            margin-bottom: 24px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .input-control {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border-light);
+            border-radius: 12px;
+            padding: 14px 20px;
+            color: #fff;
+            font-family: var(--font-main);
+            transition: var(--transition);
+        }
+
+        .input-control:focus {
+            outline: none;
+            border-color: var(--accent);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        textarea.input-control {
+            height: 150px;
+            resize: none;
+        }
+
+        @media (max-width: 968px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="mesh-gradient"></div>
+
+    <header class="site-header">
+        <a href="index.html" class="logo">
+            <i class="fas fa-infinity"></i> INFINITY<span>ALGO</span>
+        </a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">الرئيسية</a></li>
+                <li><a href="docs.html" class="nav-link">التوثيق التقني</a></li>
+                <li><a href="about.html" class="nav-link">من نحن</a></li>
+                <li><a href="contact.html" class="nav-link active">اتصل بنا</a></li>
+            </ul>
+        </nav>
+        <a href="https://t.me/King_arius_dz" class="btn btn-primary" style="padding: 10px 24px; font-size: 0.9rem;">
+            تحدث معنا
+        </a>
+    </header>
+
+    <main class="container">
+        <section class="contact-hero">
+            <h1 class="text-gradient">نحن هنا لمساعدتكم</h1>
+            <p style="color: var(--text-secondary); font-size: 1.2rem; margin-top: 24px;">سواء كان لديك سؤال تقني أو
+                اقتراح، فريقنا جاهز للتواصل معك.</p>
+        </section>
+
+        <section class="contact-grid">
+            <div class="contact-info">
+                <a href="https://t.me/King_arius_dz" class="contact-item reveal">
+                    <div class="contact-icon"><i class="fab fa-telegram"></i></div>
+                    <div>
+                        <h4 style="margin-bottom: 4px;">الدعم عبر تيليجرام</h4>
+                        <p style="font-size: 0.9rem; color: var(--text-dim);">استجابة فورية على مدار الساعة</p>
+                    </div>
+                </a>
+                <div class="contact-item reveal" style="transition-delay: 0.1s;">
+                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                    <div>
+                        <h4 style="margin-bottom: 4px;">البريد الإلكتروني</h4>
+                        <p style="font-size: 0.9rem; color: var(--text-dim);">support@infinityalgo.com</p>
+                    </div>
+                </div>
+                <div class="contact-item reveal" style="transition-delay: 0.2s;">
+                    <div class="contact-icon"><i class="fas fa-location-dot"></i></div>
+                    <div>
+                        <h4 style="margin-bottom: 4px;">المقر الرقمي</h4>
+                        <p style="font-size: 0.9rem; color: var(--text-dim);">عالم الميتافيرس - الجزائر</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-card reveal" style="transition-delay: 0.3s;">
+                <form>
+                    <div class="input-group">
+                        <label>الاسم الكامل</label>
+                        <input type="text" class="input-control" placeholder="ادخل اسمك">
+                    </div>
+                    <div class="input-group">
+                        <label>البريد الإلكتروني</label>
+                        <input type="email" class="input-control" placeholder="name@example.com">
+                    </div>
+                    <div class="input-group">
+                        <label>الموضوع</label>
+                        <input type="text" class="input-control" placeholder="كيف يمكننا مساعدتك؟">
+                    </div>
+                    <div class="input-group">
+                        <label>الرسالة</label>
+                        <textarea class="input-control" placeholder="اكتب استفسارك هنا..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary"
+                        style="width: 100%; justify-content: center; padding: 18px;">إرسال الرسالة</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container" style="text-align: center; color: var(--text-dim);">
+            &copy; 2026 InfinityAlgo Academy.
+        </div>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+
+</html>

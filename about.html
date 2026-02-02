@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>من نحن | InfinityAlgo Academy</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <style>
+        .about-hero {
+            padding-top: 200px;
+            padding-bottom: 100px;
+            text-align: center;
+        }
+
+        .about-content {
+            padding: 80px 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .mission-box {
+            background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, transparent 100%);
+            padding: 60px;
+            border-radius: 40px;
+            border: 1px solid var(--border-accent);
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 32px;
+            margin-top: 60px;
+        }
+
+        .team-card {
+            text-align: center;
+            padding: 40px;
+        }
+
+        .team-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: var(--bg-surface);
+            margin: 0 auto 24px;
+            border: 2px solid var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: var(--accent);
+        }
+
+        .vision-section {
+            padding: 100px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="mesh-gradient"></div>
+
+    <header class="site-header">
+        <a href="index.html" class="logo">
+            <i class="fas fa-infinity"></i> INFINITY<span>ALGO</span>
+        </a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">الرئيسية</a></li>
+                <li><a href="docs.html" class="nav-link">التوثيق التقني</a></li>
+                <li><a href="about.html" class="nav-link active">من نحن</a></li>
+                <li><a href="contact.html" class="nav-link">اتصل بنا</a></li>
+            </ul>
+        </nav>
+        <div style="display: flex; gap: 16px;">
+            <a href="https://t.me/King_arius_dz" class="btn btn-outline" style="padding: 10px 20px; font-size: 0.9rem;">
+                انضم لنا
+            </a>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="about-hero">
+            <h1 class="text-gradient">قصة InfinityAlgo</h1>
+            <p style="color: var(--text-secondary); font-size: 1.3rem; margin-top: 24px;">بدأنا برؤية واحدة: جعل
+                التكنولوجيا الاحترافية متاحة لكل متداول.</p>
+        </section>
+
+        <section class="about-content">
+            <div class="reveal">
+                <h2 style="font-size: 2.5rem; margin-bottom: 32px;">مهمتنا</h2>
+                <p style="color: var(--text-secondary); font-size: 1.1rem; line-height: 2;">في InfinityAlgo Academy،
+                    نؤمن بأن الأسواق المالية ليست حصراً على المؤسسات الكبرى. مهمتنا هي سد الفجوة التقنية من خلال توفير
+                    أدوات تداول تعتمد على أحدث ما توصل إليه العلم في البرمجة والذكاء الاصطناعي.</p>
+                <div style="margin-top: 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+                    <div class="glass-card" style="padding: 24px;">
+                        <span style="color: var(--accent); font-weight: 800; font-size: 1.5rem;">+5 سنوات</span>
+                        <p style="font-size: 0.9rem; color: var(--text-dim);">خبرة في تطوير الخوارزميات</p>
+                    </div>
+                    <div class="glass-card" style="padding: 24px;">
+                        <span style="color: var(--cyan); font-weight: 800; font-size: 1.5rem;">+100 منتج</span>
+                        <p style="font-size: 0.9rem; color: var(--text-dim);">تم توفيرهم مجاناً ومجانياً</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mission-box reveal" style="transition-delay: 0.2s;">
+                <h3 style="margin-bottom: 24px;">ترسانتنا التقنية</h3>
+                <p style="font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 20px;">نحن نستخدم أحدث
+                    التقنيات لضمان أفضل أداء خوارزمي:</p>
+                <div style="display: flex; flex-wrap: wrap; gap: 12px;">
+                    <span class="badge"
+                        style="background: rgba(99, 102, 241, 0.1); border: 1px solid var(--border-accent); padding: 5px 15px; border-radius: 50px; font-size: 0.8rem;">MQL4
+                        / MQL5</span>
+                    <span class="badge"
+                        style="background: rgba(99, 102, 241, 0.1); border: 1px solid var(--border-accent); padding: 5px 15px; border-radius: 50px; font-size: 0.8rem;">Python
+                        AI (TensorFlow)</span>
+                    <span class="badge"
+                        style="background: rgba(99, 102, 241, 0.1); border: 1px solid var(--border-accent); padding: 5px 15px; border-radius: 50px; font-size: 0.8rem;">C++
+                        High Speed Execution</span>
+                    <span class="badge"
+                        style="background: rgba(99, 102, 241, 0.1); border: 1px solid var(--border-accent); padding: 5px 15px; border-radius: 50px; font-size: 0.8rem;">Big
+                        Data Analysis</span>
+                </div>
+                <ul style="list-style: none; line-height: 2.5; margin-top: 30px;">
+                    <li><i class="fas fa-check" style="color: var(--accent); margin-left: 10px;"></i> الشفافية المطلقة
+                        في النتائج.</li>
+                    <li><i class="fas fa-check" style="color: var(--accent); margin-left: 10px;"></i> الابتكار المستمر
+                        لمواكبة السوق.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="vision-section reveal">
+            <h2 class="text-gradient" style="font-size: 3rem;">رؤيتنا للمستقبل</h2>
+            <p style="color: var(--text-secondary); max-width: 800px; margin: 32px auto; font-size: 1.2rem;">نسعى لأن
+                نكون المرجع الأول عالمياً في مجال التداول الخوارزمي باللغة العربية، من خلال بناء بيئة تعليمية وتقنية
+                متكاملة تضمن النجاح المستدام لمستخدمينا.</p>
+        </section>
+
+        <section style="padding: 80px 0;">
+            <h2 style="text-align: center;">الفريق خلف النجاح</h2>
+            <div class="team-grid">
+                <div class="glass-card team-card reveal">
+                    <div class="team-img"><i class="fas fa-user-tie"></i></div>
+                    <h3>Arius King</h3>
+                    <p style="color: var(--accent);">مؤسس وكبير المطورين</p>
+                    <p style="font-size: 0.9rem; color: var(--text-dim); margin-top: 16px;">خبير في لغات MQL4/5 والتحليل
+                        الكمي للأسواق.</p>
+                </div>
+                <!-- Other team members can be added here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container" style="text-align: center; color: var(--text-dim);">
+            &copy; 2026 InfinityAlgo Academy.
+        </div>
+    </footer>
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+
+</html>

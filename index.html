@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfinityAlgo Academy | التداول الخوارزمي الذكي</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta name="description" content="أكاديمية InfinityAlgo لتعليم التداول الخوارزمي والمؤشرات الذكية.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <style>
+        .hero {
+            padding-top: 220px;
+            padding-bottom: 150px;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            padding: 8px 20px;
+            background: rgba(99, 102, 241, 0.1);
+            border: 1px solid var(--border-accent);
+            color: var(--accent);
+            border-radius: 100px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            margin-bottom: 32px;
+            animation: fadeInDown 1s ease;
+        }
+
+        .hero h1 {
+            font-size: clamp(3rem, 10vw, 5.5rem);
+            margin-bottom: 32px;
+            letter-spacing: -2px;
+        }
+
+        .hero p {
+            color: var(--text-secondary);
+            font-size: 1.35rem;
+            max-width: 800px;
+            margin: 0 auto 56px;
+        }
+
+        .hero-dashboard {
+            margin-top: 80px;
+            perspective: 2000px;
+        }
+
+        .dashboard-frame {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, transparent 100%);
+            padding: 12px;
+            border-radius: 40px;
+            border: 1px solid var(--border-light);
+            box-shadow: 0 50px 100px rgba(0, 0, 0, 0.8);
+            transform: rotateX(10deg);
+            transition: transform 1s ease;
+        }
+
+        .dashboard-frame:hover {
+            transform: rotateX(0deg);
+        }
+
+        .dashboard-frame img {
+            width: 100%;
+            border-radius: 32px;
+            display: block;
+        }
+
+        /* Features */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+            padding: 100px 0;
+        }
+
+        .feature-icon {
+            width: 70px;
+            height: 70px;
+            background: var(--accent-glow);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            color: var(--accent);
+            margin-bottom: 28px;
+            border: 1px solid var(--border-accent);
+        }
+
+        /* Stats Bar */
+        .stats-bar {
+            background: var(--bg-surface);
+            border: 1px solid var(--border-light);
+            border-radius: 32px;
+            padding: 60px;
+            display: flex;
+            justify-content: space-around;
+            margin: 100px 0;
+            text-align: center;
+        }
+
+        .stat-item .val {
+            font-size: 3.5rem;
+            font-weight: 900;
+            color: #fff;
+            display: block;
+        }
+
+        .stat-item .label {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="mesh-gradient"></div>
+
+    <header class="site-header">
+        <a href="index.html" class="logo">
+            <i class="fas fa-infinity"></i> INFINITY<span>ALGO</span>
+        </a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link active">الرئيسية</a></li>
+                <li><a href="docs.html" class="nav-link">التوثيق التقني</a></li>
+                <li><a href="about.html" class="nav-link">من نحن</a></li>
+                <li><a href="contact.html" class="nav-link">اتصل بنا</a></li>
+            </ul>
+        </nav>
+        <div style="display: flex; gap: 16px;">
+            <a href="https://t.me/King_arius_dz" class="btn btn-outline" style="padding: 10px 20px; font-size: 0.9rem;">
+                <i class="fab fa-telegram"></i> تيليجرام
+            </a>
+            <a href="docs.html" class="btn btn-primary" style="padding: 10px 24px; font-size: 0.9rem;">
+                ابدأ الآن
+            </a>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Hero -->
+        <section class="hero">
+            <div class="hero-badge">Deep Neural Algorithms v4.0</div>
+            <h1 class="text-gradient">أتقن لغة الأسواق <br>بذكاء خوارزمي متفوق</h1>
+            <p>نحن نبني المستقبل الرقمي للتداول. انضم إلى الآلاف من المحترفين الذين يعتمدون على أنظمتنا المتطورة لتحقيق
+                الاستقرار والنمو في الأسواق المالية العالمية.</p>
+            <div style="display: flex; gap: 24px; justify-content: center;">
+                <a href="docs.html" class="btn btn-primary" style="padding: 18px 48px; font-size: 1.1rem;">اكتشف
+                    النظام</a>
+                <a href="about.html" class="btn btn-outline" style="padding: 18px 48px; font-size: 1.1rem;">لماذا
+                    نحن؟</a>
+            </div>
+
+            <div class="hero-dashboard reveal" style="transition-delay: 0.3s;">
+                <div class="dashboard-frame">
+                    <img src="trade-vantage-hero.png" alt="Advanced Dashboard">
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Grid -->
+        <section class="features-grid">
+            <div class="glass-card reveal">
+                <div class="feature-icon"><i class="fas fa-brain"></i></div>
+                <h3>محرك ذكاء اصطناعي</h3>
+                <p>خوارزميات تعتمد على الشبكات العصبية العميقة لتحليل أنماط السيولة الخفية وتحديد مناطق التجميع والتصريف
+                    بدقة متناهية.</p>
+            </div>
+            <div class="glass-card reveal" style="transition-delay: 0.1s;">
+                <div class="feature-icon"><i class="fas fa-shield-virus"></i></div>
+                <h3>حماية متطورة للرأس مال</h3>
+                <p>أنظمة Smart-Stop المدمجة التي تعمل خارج نطاق رؤية مزودي السيولة، مما يضمن خروجاً آمناً في أوقات
+                    التقلبات الحادة.</p>
+            </div>
+            <div class="glass-card reveal" style="transition-delay: 0.2s;">
+                <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+                <h3>تنفيذ بسرعة البرق</h3>
+                <p>تم تحسين كل سطر برمج في "Trade Vantage" ليعطيك أفضلية زمنية في تنفيذ الأوامر، مما يقلل الانزلاق
+                    السعري إلى أدنى مستوياته.</p>
+            </div>
+        </section>
+
+        <!-- Performance Showcase -->
+        <section id="performance" style="padding: 100px 0;">
+            <div class="container">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;">
+                    <div class="reveal">
+                        <h2 style="font-size: 2.5rem; margin-bottom: 24px;">أداء <span
+                                class="text-gradient">يتحطم</span> فوقه المستحيل</h2>
+                        <p style="color: var(--text-secondary); margin-bottom: 32px;">تم اختبار Trade Vantage v4 على
+                            بيانات تاريخية تمتد لـ 10 سنوات (Backtesting) مع دقة بيانات 99.9%. النتائج تظهر ثباتاً
+                            استثنائياً حتى في أعنف ظروف السوق.</p>
+                        <div class="glass-card" style="padding: 32px; border-right: 4px solid var(--emerald);">
+                            <div style="font-size: 0.85rem; color: var(--text-dim); margin-bottom: 8px;">معدل الأرباح
+                                السنوي (متوسط)</div>
+                            <div style="font-size: 2.5rem; font-weight: 800; color: var(--emerald);">+124.5%</div>
+                        </div>
+                    </div>
+                    <div class="reveal" style="transition-delay: 0.2s;">
+                        <div class="glass-card"
+                            style="height: 350px; display: flex; align-items: flex-end; gap: 15px; padding: 40px; position: relative;">
+                            <div
+                                style="position: absolute; top: 20px; right: 20px; font-size: 0.8rem; color: var(--text-dim);">
+                                النمو التراكمي (12 شهر)</div>
+                            <!-- Styled CSS Bar Chart -->
+                            <div
+                                style="flex: 1; background: var(--accent); height: 20%; border-radius: 8px 8px 0 0; opacity: 0.3;">
+                            </div>
+                            <div
+                                style="flex: 1; background: var(--accent); height: 35%; border-radius: 8px 8px 0 0; opacity: 0.5;">
+                            </div>
+                            <div
+                                style="flex: 1; background: var(--accent); height: 50%; border-radius: 8px 8px 0 0; opacity: 0.7;">
+                            </div>
+                            <div
+                                style="flex: 1; background: var(--accent); height: 45%; border-radius: 8px 8px 0 0; opacity: 0.6;">
+                            </div>
+                            <div
+                                style="flex: 1; background: var(--cyan); height: 85%; border-radius: 8px 8px 0 0; box-shadow: 0 0 20px var(--cyan);">
+                            </div>
+                            <div
+                                style="flex: 1; background: var(--accent); height: 70%; border-radius: 8px 8px 0 0; opacity: 0.8;">
+                            </div>
+                            <div
+                                style="flex: 1; background: var(--accent); height: 95%; border-radius: 8px 8px 0 0; box-shadow: 0 0 20px var(--accent);">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Detailed Capabilities -->
+        <section id="deep-dive" style="padding: 100px 0; background: rgba(99, 102, 241, 0.02);">
+            <div class="container">
+                <div class="reveal" style="text-align: center; margin-bottom: 80px;">
+                    <h2 style="font-size: 3rem;">تشريح <span class="text-gradient">الذكاء الخوارزمي</span></h2>
+                    <p style="color: var(--text-secondary); max-width: 700px; margin: 24px auto;">إليك كيف يتفوق Trade
+                        Vantage v4 على أنظمة التداول التقليدية من خلال تفاصيل تقنية دقيقة.</p>
+                </div>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px;">
+                    <div class="glass-card reveal">
+                        <div style="display: flex; gap: 20px; align-items: flex-start;">
+                            <div class="feature-icon" style="flex-shrink: 0;"><i class="fas fa-microscope"></i></div>
+                            <div>
+                                <h4>تحليل الـ Candles بالسنتيمتر</h4>
+                                <p style="font-size: 0.95rem; margin-top: 12px; color: var(--text-secondary);">النظام لا
+                                    ينظر فقط للسعر الحالي، بل يحلل سرعة تكوين الشمعة (Candle Speed) وحجم الظلال للتنبؤ
+                                    بوقوع انعكاس قبل حدوثه بـ 3-5 دقائق.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="glass-card reveal" style="transition-delay: 0.1s;">
+                        <div style="display: flex; gap: 20px; align-items: flex-start;">
+                            <div class="feature-icon" style="flex-shrink: 0;"><i class="fas fa-network-wired"></i></div>
+                            <div>
+                                <h4>التوافق المتعدد للفريمات (MTF)</h4>
+                                <p style="font-size: 0.95rem; margin-top: 12px; color: var(--text-secondary);">يقوم
+                                    الروبوت بفلترة إشارات فريم الساعة عن طريق مطابقتها مع الاتجاه العام في فريم الأربع
+                                    ساعات واليومي لضمان التداول مع "الحيتان" فقط.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="glass-card reveal" style="transition-delay: 0.2s;">
+                        <div style="display: flex; gap: 20px; align-items: flex-start;">
+                            <div class="feature-icon" style="flex-shrink: 0;"><i class="fas fa-user-shield"></i></div>
+                            <div>
+                                <h4>خوارزمية حماية الانزلاق</h4>
+                                <p style="font-size: 0.95rem; margin-top: 12px; color: var(--text-secondary);">في حالة
+                                    وجود انزلاق سعري (Slippage) عالٍ من قبل البروكر، يقوم النظام بتأجيل الدخول للأجزاء
+                                    من الثانية القادمة لضمان الحصول على السعر المطلوب بدقة صفرية.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="glass-card reveal" style="transition-delay: 0.3s;">
+                        <div style="display: flex; gap: 20px; align-items: flex-start;">
+                            <div class="feature-icon" style="flex-shrink: 0;"><i class="fas fa-database"></i></div>
+                            <div>
+                                <h4>ضبط المعطيات التلقائي</h4>
+                                <p style="font-size: 0.95rem; margin-top: 12px; color: var(--text-secondary);">يقوم
+                                    النظام بتعديل خوارزميته داخلياً بناءً على حالة السوق (سواء كان عرضي أو اتجاهي) دون
+                                    الحاجة لتدخل يدوي من المستخدم.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" style="padding: 100px 0;">
+            <div class="container">
+                <div class="reveal" style="text-align: center; margin-bottom: 60px;">
+                    <h2 style="font-size: 2.5rem;">الأسئلة <span class="text-gradient">الشائعة</span></h2>
+                    <p style="color: var(--text-secondary);">كل ما تود معرفته عن أنظمة InfinityAlgo</p>
+                </div>
+
+                <div style="max-width: 800px; margin: 0 auto; display: grid; gap: 20px;">
+                    <div class="glass-card reveal" style="padding: 24px;">
+                        <h4 style="margin-bottom: 12px; color: var(--accent);">هل الروبوت مناسب للمبتدئين؟</h4>
+                        <p style="font-size: 0.95rem; color: var(--text-secondary);">نعم، بفضل الإعدادات الافتراضية
+                            المحسنة، يمكنك البدء فوراً. كما نوفر توثيقاً كاملاً يشرح كل خطوة بالتفصيل.</p>
+                    </div>
+                    <div class="glass-card reveal" style="padding: 24px;">
+                        <h4 style="margin-bottom: 12px; color: var(--accent);">ما هو أقل رأس مال مطلوب؟</h4>
+                        <p style="font-size: 0.95rem; color: var(--text-secondary);">الروبوت يدعم حسابات السنت (Cent)
+                            والميكرو. ننصح ببدء التداول بحساب لا يقل عن 100$ لضمان إدارة مخاطر سليمة.</p>
+                    </div>
+                    <div class="glass-card reveal" style="padding: 24px;">
+                        <h4 style="margin-bottom: 12px; color: var(--accent);">هل يعمل الروبوت على الهاتف؟</h4>
+                        <p style="font-size: 0.95rem; color: var(--text-secondary);">يمكنك مراقبة النتائج من الهاتف،
+                            ولكن تشغيل الروبوت يحتاج لنسخة MetaTrader 4 على الكمبيوتر أو سيرفر VPS.</p>
+                    </div>
+                    <div class="glass-card reveal" style="padding: 24px;">
+                        <h4 style="margin-bottom: 12px; color: var(--accent);">هل هناك اشتراكات شهرية؟</h4>
+                        <p style="font-size: 0.95rem; color: var(--text-secondary);">حاليًا، نوفر معظم الأدوات كهدية
+                            مجانية لمجتمعنا، هدفنا هو بناء أكبر مجتمع تداول خوارزمي في الوطن العربي.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistics -->
+        <section class="stats-bar reveal">
+            <div class="stat-item">
+                <span class="val">+15K</span>
+                <span class="label">متداول نشط</span>
+            </div>
+            <div class="stat-item">
+                <span class="val">92%</span>
+                <span class="label">نسبة الدقة</span>
+            </div>
+            <div class="stat-item">
+                <span class="val">+80</span>
+                <span class="label">نظام خوارزمي</span>
+            </div>
+            <div class="stat-item">
+                <span class="val">24/7</span>
+                <span class="label">دعم تقني</span>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <div class="footer-logo logo">
+                        <i class="fas fa-infinity"></i> INFINITY<span>ALGO</span>
+                    </div>
+                    <p class="footer-desc">نحن الرواد في تطوير حلول التداول الآلي، نجمع بين الخبرة المالية العميقة
+                        والتكنولوجيا البرمجية المتقدمة.</p>
+                </div>
+                <div class="footer-links-col">
+                    <h4>الروابط السريعة</h4>
+                    <a href="index.html" class="footer-link">الرئيسية</a>
+                    <a href="docs.html" class="footer-link">التوثيق</a>
+                    <a href="about.html" class="footer-link">من نحن</a>
+                </div>
+                <div class="footer-links-col">
+                    <h4>الأدوات</h4>
+                    <a href="docs.html#features" class="footer-link">مؤشرات MT4</a>
+                    <a href="docs.html#ea" class="footer-link">إكسبرتات MT5</a>
+                    <a href="docs.html#setup" class="footer-link">دليل التثبيت</a>
+                </div>
+                <div class="footer-links-col">
+                    <h4>التواصل</h4>
+                    <a href="contact.html" class="footer-link">اتصل بنا</a>
+                    <a href="https://t.me/King_arius_dz" class="footer-link">تيليجرام</a>
+                    <a href="#" class="footer-link">البريد الإلكتروني</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 InfinityAlgo Academy. جميع الحقوق محفوظة لـ Arius & InfinityAlgo.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Simple scroll reveal
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    </script>
+</body>
+
+</html>
